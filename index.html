@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notee - 笔记管理系统</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/code-modal.css">
+    <link rel="stylesheet" href="css/image-modal.css">
+</head>
+<body>
+    <!-- 顶部菜单栏 -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">Notee</h1>
+            <nav class="main-nav">
+                <button class="nav-btn" id="addNoteBtn">新建笔记</button>
+                <button class="nav-btn" id="searchBtn">搜索</button>
+                <button class="nav-btn" id="settingsBtn">设置</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 左侧分类导航 -->
+        <aside class="sidebar">
+            <div class="categories" id="categories">
+                <!-- 分类列表将通过JavaScript动态生成 -->
+            </div>
+        </aside>
+
+        <!-- 主内容区域 -->
+        <main class="main-content">
+            <div class="notes-grid" id="notesGrid">
+                <!-- 笔记卡片将通过JavaScript动态生成 -->
+            </div>
+        </main>
+    </div>
+
+    <!-- 代码模态窗口 -->
+    <div class="code-modal-overlay" id="codeModalOverlay">
+        <div class="code-modal">
+            <div class="code-modal-header">
+                <h2 class="code-modal-title" id="codeModalTitle">代码预览</h2>
+                <button class="code-modal-close" id="codeModalClose">&times;</button>
+            </div>
+            <div class="code-modal-content" id="codeModalContent">
+                <!-- 代码块内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 图片模态窗口 -->
+    <div class="image-modal-overlay" id="imageModalOverlay">
+        <div class="image-modal">
+            <div class="image-modal-header">
+                <h2 class="image-modal-title" id="imageModalTitle">图片预览</h2>
+                <button class="image-modal-close" id="imageModalClose">&times;</button>
+            </div>
+            <div class="image-modal-content" id="imageModalContent">
+                <div class="image-container" id="imageContainer">
+                    <!-- 图片将通过JavaScript动态生成 -->
+                </div>
+                <div class="image-controls">
+                    <div class="image-nav">
+                        <button class="image-btn" id="prevImageBtn" disabled>上一张</button>
+                        <button class="image-btn" id="nextImageBtn" disabled>下一张</button>
+                    </div>
+                    <div class="image-info" id="imageInfo">0/0</div>
+                    <div class="image-zoom-controls">
+                        <button class="zoom-btn" id="zoomOutBtn">-</button>
+                        <span class="zoom-level" id="zoomLevel">100%</span>
+                        <button class="zoom-btn" id="zoomInBtn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript模块 -->
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/categories.js"></script>
+    <script src="js/notes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

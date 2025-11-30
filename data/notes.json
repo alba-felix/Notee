@@ -1,0 +1,484 @@
+[
+  {
+    "note_id": "1763046852.264289",
+    "title": "test",
+    "content": "test",
+    "category": "快速笔记",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-13T23:14:12.264338",
+    "updated_at": "2025-11-13T23:14:12.264340",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763046901.262868",
+    "title": "test2",
+    "content": "test2",
+    "category": "JAVA",
+    "tags": [
+      "test2"
+    ],
+    "code_blocks": [
+      {
+        "content": "package com.itheima.util;\n\nimport com.aliyun.oss.ClientException;\nimport com.aliyun.oss.OSS;\nimport com.aliyun.oss.common.auth.*;\nimport com.aliyun.oss.OSSClientBuilder;\nimport com.aliyun.oss.OSSException;\nimport com.aliyun.oss.model.PutObjectRequest;\nimport com.aliyun.oss.model.PutObjectResult;\nimport lombok.extern.slf4j.Slf4j;\n\nimport java.io.ByteArrayInputStream;\nimport java.util.UUID;\n\n/**\n * 阿里云OSS操作工具类\n */\n@Slf4j\npublic class AliyunOSSUtils {\n\n    /**\n     * 上传文件\n     * @param endpoint endpoint域名\n     * @param bucketName 存储空间的名字\n     * @param content 内容字节数组\n     */\n    public static String upload(String endpoint, String bucketName, byte[] content, String extName) throws Exception {\n        // 从环境变量中获取访问凭证。运行本代码示例之前，请确保已设置环境变量OSS_ACCESS_KEY_ID和OSS_ACCESS_KEY_SECRET。\n        EnvironmentVariableCredentialsProvider credentialsProvider = CredentialsProviderFactory.newEnvironmentVariableCredentialsProvider();\n        // 填写Object完整路径，完整路径中不能包含Bucket名称，例如exampledir/exampleobject.txt。\n        String objectName = UUID.randomUUID() + extName;\n\n        // 创建OSSClient实例。\n        OSS ossClient = new OSSClientBuilder().build(endpoint, credentialsProvider);\n        try {\n            // 创建PutObjectRequest对象。\n            PutObjectRequest putObjectRequest = new PutObjectRequest(bucketName, objectName, new ByteArrayInputStream(content));\n            // 创建PutObject请求。\n            PutObjectResult result = ossClient.putObject(putObjectRequest);\n        } catch (OSSException oe) {\n            log.error(\"Caught an OSSException, which means your request made it to OSS, but was rejected with an error response for some reason.\");\n            log.error(\"Error Message:\" + oe.getErrorMessage());\n            log.error(\"Error Code:\" + oe.getErrorCode());\n            log.error(\"Request ID:\" + oe.getRequestId());\n            log.error(\"Host ID:\" + oe.getHostId());\n        } catch (ClientException ce) {\n            log.error(\"Caught an ClientException, which means the client encountered a serious internal problem while trying to communicate with OSS, such as not being able to access the network.\");\n            log.error(\"Error Message:\" + ce.getMessage());\n        } finally {\n            if (ossClient != null) {\n                ossClient.shutdown();\n            }\n        }\n\n        return endpoint.split(\"//\")[0] + \"//\" + bucketName + \".\" + endpoint.split(\"//\")[1] + \"/\" + objectName;\n    }\n\n}",
+        "language": "Java"
+      }
+    ],
+    "images": [
+      {
+        "filename": "test2_0_1262f70e.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\test2_0_1262f70e.png"
+      }
+    ],
+    "remarks": "",
+    "created_at": "2025-11-13T23:15:01.262912",
+    "updated_at": "2025-11-13T23:26:59.668865",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763107464.530368",
+    "title": "centos",
+    "content": "远程链接初步工作",
+    "category": "Bash",
+    "tags": [],
+    "code_blocks": [
+      {
+        "content": "uname -a              # 查看内核和系统信息\ncat /etc/centos-release  # 查看 CentOS 版本\nhostname              # 查看主机名\nuptime                # 查看系统运行时间和负载",
+        "language": "其他"
+      }
+    ],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-14T16:04:24.530849",
+    "updated_at": "2025-11-14T16:04:24.530850",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763349975.969944",
+    "title": "环境配置",
+    "content": "Path里配置D:\\Dev\\Java\\jdk-21\\bin\n单独项；\nJAVA HOME D:\\DevJava\\jdk-21 然后Path %JAVA_HOME%\\bin",
+    "category": "快速笔记",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-17T11:26:15.970616",
+    "updated_at": "2025-11-17T11:26:15.970619",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763351838.287106",
+    "title": "数据类型分类",
+    "content": "整型：byte：1字节 -128~127\nshort:2字节 -32768~32767\nint: 正负大概21亿\nlong:正负900京\n\n浮点型：float：4字节 比long大\ndouble：8字节 \n\n字符型：char 2字节 0~65535\n布尔型：boolean:true,fales\n\n强转类型： 数据类型 变量=（数据类型）变量、数据",
+    "category": "快速笔记",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-17T11:57:18.287142",
+    "updated_at": "2025-11-17T14:19:22.030451",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763362417.726457",
+    "title": "桌面图标",
+    "content": "​\n桌面右键 → 个性化 → 主题 → 桌面图标设置 → 勾选“此电脑”或“计算机” → 应用/确定",
+    "category": "快速笔记",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-17T14:53:37.726489",
+    "updated_at": "2025-11-17T14:53:37.726491",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763377031.674433",
+    "title": "多个对象在计算机执行原理",
+    "content": "如图",
+    "category": "综合",
+    "tags": [],
+    "code_blocks": [],
+    "images": [
+      {
+        "filename": "多个对象在计算机执行原理_0_1d847b03.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\多个对象在计算机执行原理_0_1d847b03.png"
+      }
+    ],
+    "remarks": "",
+    "created_at": "2025-11-17T18:57:11.674915",
+    "updated_at": "2025-11-17T18:57:11.674916",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763378777.754867",
+    "title": "实体类",
+    "content": "1.类中成员变量都要私有。2.类中必须要有一个公共的无参构造器",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-17T19:26:17.754881",
+    "updated_at": "2025-11-17T19:26:17.754882",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763443094.797414",
+    "title": "Static",
+    "content": "叫静态，可以修饰成员变量，成员方法。成员变量按照有无static修饰被分为两种。\n1.类变量（也叫静态变量）：会被类的全部共享。通过类名.类变量访问.\n2.实例变量，无static修饰，属于每个对象的。通过对象.实例变量访问.\n\n类方法和实例方法和上面类似。一般静态方法用于工具类",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-18T13:18:14.798512",
+    "updated_at": "2025-11-18T13:47:55.754345",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763445150.832967",
+    "title": "代码块",
+    "content": "类的五大成分之一（还有成员变量，构造器，方法，内部类）\n静态代码块：static{} 类加载时优先执行，用于类的初始化。\n实例代码块：{} 首次创建实例对象执行。且在构造器前执行。",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-18T13:52:30.832981",
+    "updated_at": "2025-11-18T13:52:30.832982",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763446934.305692",
+    "title": "单例模式",
+    "content": "饿汉式单例：拿对象时，就已经创建好了。\n懒汉式单例；拿对象时才创建",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [
+      {
+        "content": "public class A {\n    // 2、定义一个静态变量用于记住类的一个唯一对象。\n    private static A a = new A();\n\n    // 1、把类的构造器私有化处理.\n    private A(){\n    }\n\n    // 3、提供一个静态方法返回这个唯一的对象\n    public static A getInstance(){\n        return a;\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "public class B {\n    // 2、定义一个静态变量用于记住类的一个唯一对象\n    private static B b; // b == null\n\n    // 1、私有构造器\n    private B(){\n    }\n\n    // 3、提供一个静态的get方法，返回一个唯一的对象。\n    public static B getInstance(){\n        // 第一次来拿对象的时候，是需要创建对象的，后面不创建的。\n        if(b == null) {\n            // 第一次拿对象，需要创建对象\n            b = new B();\n        }\n        return b;\n    }\n}",
+        "language": "Java"
+      }
+    ],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-18T14:22:14.305721",
+    "updated_at": "2025-11-18T14:30:53.246804",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763448883.306606",
+    "title": "继承（extends）",
+    "content": "子类只能继承父类非私有成员\n\n权限修饰符：private 当前类\n缺省：当前类和同一包下的其他类\nprotected :子类权限，本类，同一包下的类和子孙类。\npublic：公开权限，所有类。\n\n方法重写：名称和参数和父类一样。重写的返回值类型和父类一样时，则范围要更小。\n\n在子类中访问其他成员，按照就近原则。如果父子类中出现重名的，先用子类的，如果一定要访问父类的则加super\n\n优先调用父类无参构造器",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [
+      {
+        "content": "public Student(String name, int age){\n        // this调用兄弟构造器\n        this(name, age, \"黑马程序员\");\n    }",
+        "language": "其他"
+      }
+    ],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-18T14:54:43.306621",
+    "updated_at": "2025-11-19T15:32:25.668403",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763530816.210563",
+    "title": "多态",
+    "content": "说白了就是大范围“类”可以兼容小范围的。\n有继承/实现关系且存在父类引用子类的对象 存在方法重写就用多态\n\n在多态下右边对象时解耦合的，便于扩展和维护。坏处：不能调用子类中独有的方法。\n\n多态下类型转换：自动转：父类 变量名=new 子类（）；\n强制转：子类 变量名 =（父类）父类变量；",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-19T13:40:16.211711",
+    "updated_at": "2025-11-19T14:06:28.445013",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763532558.245107",
+    "title": "final",
+    "content": "修饰类，方法，变量。修饰类后不能被继承了。修饰方法后不能被重写。修饰变量后只能赋值一次。\n\n变量：成员变量和局部变量。成员变量又分静态成员变量和实例成员变量",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-19T14:09:18.245122",
+    "updated_at": "2025-11-19T14:14:21.729795",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763537692.16334",
+    "title": "抽象类（abstract）",
+    "content": "abstract修饰，注意；修饰方法时，只能有方法名，不能有方法体{}\n\n1.抽象类中不一定有抽象方法，但有抽象方法的类一定是抽象方法。\n2.类该有的成员（成员变量，方法，构造器），抽象类也可以有\n3.主要特点：抽象类不能创建对象，仅作为一种特殊父类\n4.一个类继承抽象类必须重写完全部抽象方法，否则这个类也必须定义成抽象类\n\n方法体无意义时可以不写，简化代码，强制子类重写。抽象类就相当于一个大纲",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [
+      {
+        "content": "public abstract class People {\n    // 模板方法设计模式(不能被重写，加上final修饰，保护它！)\n    public final void write(){\n        System.out.println(\"\\t\\t\\t《我的爸爸》\");\n        System.out.println(\"\\t我的爸爸还是很棒的，他是这样的人，听我介绍一下\");\n        // 所有子类都要写正文，但是每个子类写的情况是不一样的，我们就可以把正文的书写定义成抽象方法\n        // 具体的实现交给子类来写。\n        writeMain();\n        System.out.println(\"\\t有这样的爸爸真好！\");\n    }\n\n    public  abstract void writeMain();\n}",
+        "language": "其他"
+      }
+    ],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-19T15:34:52.163404",
+    "updated_at": "2025-11-21T11:05:11.656021",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763694457.550645",
+    "title": "接口",
+    "content": "1.常量：接口中定义常量可以不写public static final\n2.抽象方法：可以不写public abstract\n\n接口不能创建对象，被类实现implement。\n\n1.一个接口继承多个接口，如果存在签名冲突，则此时不支持多继承。\n2.一个类实现多个接口，如果多个接口存在方法签名冲突，则不支持多实现\n3.一个类继承了父类，又同时实现了接口，父类和接口有同名的默认方法，实现类会先用父类的。\n4.一个类实现了多个接口，多个接口存在同名的默认方法，可以不冲突，这个类重写方法就行",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-21T11:07:37.552053",
+    "updated_at": "2025-11-21T11:59:08.538960",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763729346.709664",
+    "title": "内部类",
+    "content": "类里面嵌套类，是类的五大成分之一（成员变量，方法，构造器，内部类，代码块）。\n\n1.成员内部类：无static修饰，属于外部类对象持有。\n2.静态内部类：有static，属于外部类本身的。Outer.Inner in = new Outer.Inner();\n3.局部内部类；定义在方法，构造器，代码块中。\n4.匿名内部类（重点）：特殊的一种局部内部类。本质是一种子类。",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [
+      {
+        "content": "public class People {\n    private int heartBeat = 110;\n    // 成员内部类\n    public class Heart{\n        private int heartBeat = 95;\n\n        public void show(){\n            int heartBeat = 80;\n            System.out.println(heartBeat); // 80\n            System.out.println(this.heartBeat); // 95\n            System.out.println(People.this.heartBeat); // 110\n        }\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "public class Test {\n    public static void main(String[] args) {\n        // 目标：认识匿名内部类。\n        // 匿名内部类本质是一个子类，同时会立即创建一个子类对象\n        // 匿名内部类的名称：当前类名&编号\n        Animal a = new Animal(){\n            @Override\n            public void cry() {\n                System.out.println(\"🐕是汪汪汪的叫~~~\");\n            }\n        };\n        a.cry();\n    }\n}\n\n//class Dog extends Animal{\n//    @Override\n//    public void cry() {\n//        System.out.println(\"🐕是汪汪汪的叫~~~\");\n//    }\n//}\n\nabstract class Animal{\n    public abstract void cry();\n}",
+        "language": "Java"
+      },
+      {
+        "content": "public class Test2 {\n    public static void main(String[] args) {\n        // 目标：匿名内部类的使用场景：通过作为一个对象参数传输给方法使用。\n        Swimming s1 = new Swimming() {\n            @Override\n            public void swim() {\n                System.out.println(\"学生🏊‍贼溜~~~\");\n            }\n        };\n        go(s1);\n\n        go(new Swimming() {\n            @Override\n            public void swim() {\n                System.out.println(\"老师🏊‍贼慢~~~\");\n            }\n        });\n    }\n\n    public static void go(Swimming s){\n        System.out.println(\"开始。。。。\");\n        s.swim();\n        System.out.println(\"结束。。。。\");\n    }\n}\n\n// 需求：学生和老师要一起参加游泳比赛。\ninterface Swimming{\n    void swim();\n}",
+        "language": "Java"
+      }
+    ],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-21T20:49:06.711267",
+    "updated_at": "2025-11-21T21:33:11.181149",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763732994.217814",
+    "title": "枚举类",
+    "content": "枚举类的第一行只能罗列一些名称，是常量。构造器是私有的，因此不能创建对象。是最终类不能被继承。\n第二行开始可以定义其他类的各种成员。",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-21T21:49:54.217837",
+    "updated_at": "2025-11-21T21:49:54.217838",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763790653.745638",
+    "title": "泛型",
+    "content": "定义类，接口，方法时，同时声明了一个或多个类型变量<E>.\n泛型本质是把具体的数据类型作为参数传递给类型变量。",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [
+      {
+        "content": "import java.util.ArrayList;\n\n// 泛型类\npublic class MyArrayList<E> {\n\n    private ArrayList list = new ArrayList();\n    public boolean add(E e){\n        list.add(e);\n        return true;\n    }\n\n    public boolean remove(E e){\n        return list.remove(e);\n    }\n\n    @Override\n    public String toString() {\n        return list.toString();\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "public class Test2 {\n    public static void main(String[] args) {\n        // 目标：通配符和上下限。\n        // 需求：所有汽车要一起参与比赛。\n        ArrayList<TSL> tsls = new ArrayList<>();\n        tsls.add(new TSL());\n        tsls.add(new TSL());\n        tsls.add(new TSL());\n        go(tsls);\n\n        ArrayList<LX> lxes = new ArrayList<>();\n        lxes.add(new LX());\n        lxes.add(new LX());\n        lxes.add(new LX());\n        go(lxes);\n\n//        ArrayList<Dog> dogs = new ArrayList<>();\n//        dogs.add(new Dog());\n//        dogs.add(new Dog());\n//        dogs.add(new Dog());\n//        go(dogs);\n    }\n\n    // 虽然LX和TSL是Car的子类，但是 ArrayList<TSL>和 ArrayList<LX> 与 ArrayList<Car> 没有半毛钱关系。\n    // 通配符：其实就是？，可以在使用泛型的时候代表一切类型。  E T K V 是定义时用\n    // 泛型的上下限： ? extends Car(上限，？必须是Car或者Car的子类)\n    //             ? super Car(下限，？必须是Car或者Car的父类)\n    public static void go(ArrayList<? extends Car> cars){\n    }\n}\n\nclass Car{\n\n}\n\nclass TSL extends Car{\n\n}\n\nclass LX extends Car{\n\n}\n\nclass Dog{\n}",
+        "language": "Java"
+      }
+    ],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-22T13:50:53.746811",
+    "updated_at": "2025-11-22T14:28:21.292643",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763799325.116435",
+    "title": "常用API 1",
+    "content": "public String toString() 返回对象的字符串\npublic boolean equals(Object o)判断两个对象（内容）是否相等\n\n构造器用于new对象。\n\nObjects是一个工具类。常见方法：\n1.public static boolean equals(Object a,Object b):先判断非空，再比较两个对象。\n2.public static boolean isNull（Object obj) 判断对象是否为null，是返回true。\n3.public static bollean nonNull(Object obj) 判断对象是否不为nonNull\n\n包装类：把基本数据类型包装成对象。\n1.byte---Byte\n2.int --- Integer\n3.char---Character\n其他首字母变大写。\n\nStringBuilder：操作字符串的\n\nMath，System，Runtime\n\nBigDecimal\n\n时间相关的：\n1.LocalDate:年月日\n2.LocalTime:时分秒\n3.LocalDateTime:年月日时分秒\n4.ZoneId：时区\n5.ZonedDateTime:带时区的时间\n6.Instant；时间戳\n7.DateTimeFormatter：用于时间的格式化和解析\n8.Duration：时间间隔（时分秒，纳秒）\n9.Period：时间间隔（年月日）",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [
+      {
+        "content": "public class Test {\n    public static void main(String[] args) {\n        // 目标：认识包装类，搞清楚他的作用。\n        int a = 12;\n\n        // 1、把基本类型通过包装类包装成对象。\n        // Integer it1 = new Integer(a);\n        Integer it1 = Integer.valueOf(a);  // 手动包装\n        System.out.println(it1);\n\n        // 2、自动装箱机制：基本类型的数据可以直接变成对象赋值给包装类。\n        Integer it2 = 128;\n        Integer it3 = 128;\n        System.out.println(it2 == it3);\n\n        // 3、自动拆箱机制：包装类的对象可以直接赋值给基本数据类型。\n        int it4 = it3;\n        System.out.println(it4);\n\n        System.out.println(\"----------------Java为包装类提供了新功能---------------------\");\n        // 1、功能一：包装类可以把基本类型的数据转换成字符串。\n        int a1 = 23;\n        String rs = Integer.toString(a1); // \"23\"\n        System.out.println(rs + 1); // 231\n\n        Integer i = 23;\n        String rs2 = i.toString(); // \"23\"\n        System.out.println(rs2 + 1);\n\n        int a2 = 23;\n        String rs3 = a2 + \"\"; // 这样还简单点\n        System.out.println(rs3 + 1);\n\n        // 2、功能二：把字符串数值转换成对应的基本数据类型（很有用！）\n        String ageStr = \"23\";\n        //int age = Integer.parseInt(ageStr);\n        int age = Integer.valueOf(ageStr);\n        System.out.println(age + 1); // 24\n\n        String scoreStr = \"99.5\";\n        //double score = Double.parseDouble(scoreStr);\n        double score = Double.valueOf(scoreStr);\n        System.out.println(score + 0.5); // 100.0\n\n        // 3、由于泛型和集合都不支持基本数据类型，因为万物皆对象，因此包装类在集合和泛型中大量使用而且是必须使用。\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "public class StringBuilderDemo1 {\n    public static void main(String[] args) {\n        // 目标：学会用StringBuilder，理解其好处。\n        // 1、创建StringBuilder对象\n        StringBuilder sb = new StringBuilder(); // sb = \"\"\n        StringBuilder sb2 = new StringBuilder(\"黑马\"); // sb2 = \"黑马\";\n        System.out.println(sb);\n        System.out.println(sb2);\n\n        // 2、拼接内容。\n        sb.append(\"深圳黑马\").append(\"Java\").append(666).append(true);\n        System.out.println(sb);\n\n        // 3、反转内容\n        sb.reverse();\n        System.out.println(sb);\n\n        // 4、拿长度\n        System.out.println(sb.length());\n\n        // 5、把StringBuilder对象转换成String对象。\n        // StringBuilder是拼接字符串的手段。、\n        // String才是开发中的目的。\n        String result = sb.toString();\n        System.out.println(result);\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "public class MathTest {\n    public static void main(String[] args) {\n        // 目标：了解下Math类提供的常见方法。\n\n        // 1、public static int abs(int a)：取绝对值（拿到的结果一定是正数）\n        //    public static double abs(double a)\n        System.out.println(Math.abs(-12)); // 12\n        System.out.println(Math.abs(123)); // 123\n        System.out.println(Math.abs(-3.14)); // 3.14\n\n        // 2、public static double ceil(double a): 向上取整\n        System.out.println(Math.ceil(4.0000001)); // 5.0\n        System.out.println(Math.ceil(4.0));   // 4.0\n\n        // 3、public static double floor(double a): 向下取整\n        System.out.println(Math.floor(4.999999)); // 4.0\n        System.out.println(Math.floor(4.0)); // 4.0\n\n        // 4、public static long round(double a)：四舍五入\n        System.out.println(Math.round(3.4999)); // 3\n        System.out.println(Math.round(3.50001)); // 4\n\n        // 5、public static int max(int a, int b)：取较大值\n        //   public static int min(int a, int b)：取较小值\n        System.out.println(Math.max(10, 20)); // 20\n        System.out.println(Math.min(10, 20)); // 10\n\n        // 6、 public static double pow(double a, double b)：取次方\n        System.out.println(Math.pow(2, 3)); // 2的3次方   8.0\n        System.out.println(Math.pow(3, 2)); // 3的2次方   9.0\n\n        // 7、public static double random()： 取随机数 [0.0 , 1.0) (包前不包后)\n        System.out.println(Math.random());\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "import java.math.BigDecimal;\nimport java.math.RoundingMode;\n\npublic class BigDecimalDemo1 {\n    public static void main(String[] args) {\n        // 目标：学会处理浮点型运算失真的问题\n        double a = 0.1;\n        double b = 0.2;\n        double c = a + b;\n        System.out.println(c); // 0.30000000000000004\n\n        // 1、把两个数据包装成BigDecimal对象\n        //  a、public BigDecimal(String val) : 这个接收字符串的构造器才可以处理失真问题。\n        BigDecimal a1 = new BigDecimal(Double.toString(a));\n        BigDecimal b1 = new BigDecimal(Double.toString(b));\n\n        // b、阿里巴巴公司更推荐我们用valueOf方法包装浮点型数据成为 BigDecimal对象\n        // 跟上面的做法本质是一样的\n        BigDecimal a11 = BigDecimal.valueOf(a);\n        BigDecimal b11 = BigDecimal.valueOf(b);\n\n        // 2、调用方法进行精度运算。\n//        BigDecimal c11 = a11.add(b11); // 加\n//        BigDecimal c11 = a11.subtract(b11); // 减\n//        BigDecimal c11 = a11.multiply(b11); // 乘\n        BigDecimal c11 = a11.divide(b11); // 除\n\n        // 3、BigDecimal是处理精度问题的手段，结果必须还是基本类型的。\n        double result = c11.doubleValue();\n        System.out.println(result);\n\n        System.out.println(\"-------------------------------------------------\");\n        BigDecimal i = BigDecimal.valueOf(0.1);\n        BigDecimal j = BigDecimal.valueOf(0.3);\n        /**\n         * 参数一： 除数\n         * 参数二：保留位数\n         * 参数三：舍入模式\n         */\n        // public BigDecimal divide(BigDecimal divisor, int scale, RoundingMode roundingMode)\n        BigDecimal k = i.divide(j, 2, RoundingMode.HALF_UP);\n        System.out.println(k);\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "import java.time.Duration;\nimport java.time.LocalDateTime;\nimport java.time.format.DateTimeFormatter;\n\n//TIP 要<b>运行</b>代码，请按 <shortcut actionId=\"Run\"/> 或\n// 点击装订区域中的 <icon src=\"AllIcons.Actions.Execute\"/> 图标。\npublic class Main {\n    public static void main(String[] args) {\n        //TIP 当文本光标位于高亮显示的文本处时按 <shortcut actionId=\"ShowIntentionActions\"/>\n        // 查看 IntelliJ IDEA 建议如何修正。\n        System.out.printf(\"Hello and welcome!\");\n\n        String  startTime = \"2026-06-07 09:30:00\";\n        DateTimeFormatter dtf= DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\");\n        LocalDateTime ldt = LocalDateTime.parse(startTime, dtf);\n        System.out.println(ldt);\n\n        LocalDateTime now = LocalDateTime.now();\n        System.out.println(now);\n\n        Duration duration = Duration.between(now, ldt);\n//        System.out.println(duration.toDays());\n        System.out.println(duration.toDaysPart() + \"天\" + duration.toHoursPart() + \"小时\" + duration.toMinutesPart() + \"分钟\"\n                + duration.toSecondsPart() + \"秒\");\n\n\n    }\n}",
+        "language": "Java"
+      }
+    ],
+    "images": [
+      {
+        "filename": "常用api-1_0_3d2d83b7.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\常用api-1_0_3d2d83b7.png"
+      },
+      {
+        "filename": "常用api-1_1763879780541_1_94a69444.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\常用api-1_1763879780541_1_94a69444.png"
+      },
+      {
+        "filename": "常用api-1_1763886581934_2_5f46f8d5.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\常用api-1_1763886581934_2_5f46f8d5.png"
+      },
+      {
+        "filename": "常用api-1_1763886707544_3_e38a7ef6.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\常用api-1_1763886707544_3_e38a7ef6.png"
+      },
+      {
+        "filename": "常用api-1_1763886728543_4_2c5ed703.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\常用api-1_1763886728543_4_2c5ed703.png"
+      },
+      {
+        "filename": "常用api-1_1763887460944_5_50a1a29f.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\常用api-1_1763887460944_5_50a1a29f.png"
+      }
+    ],
+    "remarks": "",
+    "created_at": "2025-11-22T16:15:25.117759",
+    "updated_at": "2025-11-29T21:19:22.112564",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763883200.629996",
+    "title": "写死X 硬编码√",
+    "content": "",
+    "category": "其他",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-23T15:33:20.630009",
+    "updated_at": "2025-11-23T15:33:20.630009",
+    "is_archived": false
+  },
+  {
+    "note_id": "1763985113.177679",
+    "title": "github",
+    "content": "pages 静态托管网页\n\n\n第一条 A 记录：主机记录 @（或 www），记录值 185.199.108.153\n第二条 A 记录：主机记录 @（或 www），记录值 185.199.109.153\n第三条 A 记录：主机记录 @（或 www），记录值 185.199.110.153\n第四条 A 记录：主机记录 @（或 www），记录值 185.199.111.153",
+    "category": "其他",
+    "tags": [],
+    "code_blocks": [],
+    "images": [
+      {
+        "filename": "github_1763985113182_0_1e77b9fc.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\github_1763985113182_0_1e77b9fc.png"
+      }
+    ],
+    "remarks": "",
+    "created_at": "2025-11-24T19:51:53.178956",
+    "updated_at": "2025-11-24T19:52:43.773696",
+    "is_archived": false
+  },
+  {
+    "note_id": "1764129124.673246",
+    "title": "ssh远程链接",
+    "content": "设置防火墙允许 SSH 连接的实用步骤\n\n一、Linux 常见发行版\nUbuntu/Debian（UFW）\n允许 SSH：sudo ufw allow 22/tcp；若自定义端口（如 2222）：sudo ufw allow 2222/tcp\n启用防火墙：sudo ufw enable\n查看状态：sudo ufw status\nCentOS/RHEL/Fedora（firewalld）\n允许 SSH 服务：sudo firewall-cmd --permanent --add-service=ssh；若自定义端口：sudo firewall-cmd --permanent --add-port=2222/tcp\n使配置生效：sudo firewall-cmd --reload\n查看规则：firewall-cmd --list-all\n验证与提示\n确认服务运行：sudo systemctl status sshd（或 ssh）\n若修改了默认端口，需同步修改 /etc/ssh/sshd_config​ 的 Port 项并重启 sshd；在 CentOS/RHEL 上若启用 SELinux，还需执行：sudo semanage port -a -t ssh_port_t​ -p tcp 2222；完成后用 ssh -p 端口 用户@IP 测试连接\n。\n\n二、Windows 10/11\n安装并启动 OpenSSH 服务\n设置 → 应用 → 可选功能 → 添加功能 → 安装 OpenSSH 服务器\n以管理员身份运行 PowerShell：Start-Service sshd；设为开机自启：Set-Service -Name sshd​ -StartupType Automatic\n防火墙放行\n方式一（推荐）：控制面板 → 系统和安全 → Windows Defender 防火墙 → 允许应用通过防火墙 → 勾选 OpenSSH Server（适用于当前网络类型）\n方式二：高级设置 → 入站规则 → 新建规则 → 端口 → 指定 TCP 22​ → 允许连接 → 按需勾选域/专用/公用 → 命名完成\n验证\n查看服务：sc query sshd；监听端口：netstat -ano | findstr :22\n客户端连接：ssh 用户名@服务器IP\n。",
+    "category": "其他",
+    "tags": [],
+    "code_blocks": [],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-26T11:52:04.674550",
+    "updated_at": "2025-11-26T11:52:04.674551",
+    "is_archived": false
+  },
+  {
+    "note_id": "1764422465.323425",
+    "title": "常用API2",
+    "content": "Arrays类\n1.tostring方法：返回数组内容\n2.copyofrange 拷贝到新的数据\n3.copyof 扩容\n4.setAll 修改每个数据，再存入 \ndouble[] scores = {99.5, 90, 59.5, 78, 98, 55};\n        // 需求：为每个分数加分10分。\nArrays.setAll(scores, new IntToDoubleFunction() {\n            @Override\n            public double applyAsDouble(int index) {\n                return scores[index] + 10;\n            }\n        });\n5.sort 升序\n方 式一：让该对象的类实现comparable(比较规则)接口，然后重写compareTo方法，自己来制定比较规则。方式二：使用下面这个sort方法，创建comparator比较器接口的匿名内部类对象，然后自己制定比较规\n\nLambda表达式的省略写法（进一步简化Lambda表达式的写法）\n参数类型可以省略不写。\n如果只有一个参数，参数类型可以省略，同时0也可以省略。\n如果Lambda表达式中的方法体代码只有一行代码，可以省略大括号不写，同时要省略分号！此时，\n如果这行代码是return语句，也必须去掉return不写。",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [
+      {
+        "content": "import java.util.Arrays;\nimport java.util.function.IntToDoubleFunction;\n\npublic class ArraysDemo1 {\n    public static void main(String[] args) {\n        // 目标：掌握操作数组的工具类：Arrays的常见方法。\n        // 1、返回数组内容:   public static String toString(类型[] a)\n        int[] arr = {11, 55, 33, 22, 98};\n        String result = Arrays.toString(arr);\n        System.out.println(result);\n\n        // 2、拷贝数组的内容到一个新的数组，并返回新数组\n        // public static 类型[] copyOfRange(类型[] original, int from, int to)\n        int[] arr2 = Arrays.copyOfRange(arr, 1, 4);// 包前不包后\n        System.out.println(Arrays.toString(arr2));\n\n        // 3、给数组扩容。\n        // public static 类型[] copyOf(类型[] original, int newLength)\n        int[] arr3 = Arrays.copyOf(arr, 10);\n        System.out.println(Arrays.toString(arr3));\n\n        // 4、修改数组中每个数据，再存入。\n        double[] scores = {99.5, 90, 59.5, 78, 98, 55};\n        // 需求：为每个分数加分10分。\n        Arrays.setAll(scores, new IntToDoubleFunction() {\n            @Override\n            public double applyAsDouble(int index) {\n                return scores[index] + 10;\n            }\n        });\n        System.out.println(Arrays.toString(scores));\n\n        // 5、Arrays类提供的对数组进行排序的操作。\n        Arrays.sort(scores); // 升序排序（由小到大）\n        System.out.println(Arrays.toString(scores));\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "import java.util.Arrays;\nimport java.util.Comparator;\n\npublic class ArraysDemo2 {\n    public static void main(String[] args) {\n        // 目标：给存储对象的数组进行排序。\n        Student[] students = new Student[4]; // students = [null, null, null, null]\n        //                                                   0     1     2     3\n        students[0] = new Student(\"周芷若\", 21, '女', 169.3);\n        students[1] = new Student(\"殷素素\", 38, '女', 172.2);\n        students[2] = new Student(\"小昭\", 19, '女', 168.5);\n        students[3] = new Student(\"张无忌\", 23, '男', 183.5);\n\n\n        // 自定义排序规则方式一：让对象所在的类实现比较规则接口Comparable，重写compareTo方法，来指定比较规则。\n//        Arrays.sort(students);\n\n        // 自定义排序规则方式二：sort存在重载的方法，支持自带Comparator比较器对象来直接指定比较规则（优先）\n        //  public static <T> void sort(T[] a, Comparator<? super T> c)\n        Arrays.sort(students, new Comparator<Student>() {\n            @Override\n            public int compare(Student o1, Student o2) {\n                // return o1.getAge() - o2.getAge(); // 升序\n//                if(o1.getHeight() > o2.getHeight()){\n//                    return 1;\n//                }else if(o1.getHeight() < o2.getHeight()){\n//                    return -1;\n//                }\n//                return 0;\n                return Double.compare(o1.getHeight(), o2.getHeight());\n            }\n        });\n\n        System.out.println(Arrays.toString(students));\n\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "// 自定义排序规则方式一：让对象所在的类实现比较规则接口Comparable，重写compareTo方法，来指定比较规则。\npublic class Student implements Comparable<Student>{\n    private String name;\n    private int age;\n    private char gender;\n    private double height;\n\n    public Student() {\n    }\n\n    public Student(String name, int age, char gender, double height) {\n        this.name = name;\n        this.age = age;\n        this.gender = gender;\n        this.height = height;\n    }\n\n    // 指定大小规则\n    // 比较者：this\n    // 被比较者：o\n    @Override\n    public int compareTo(Student o) {\n        /**\n         * 官方规定：\n         * 如果您认为左边大于右边，请返回正整数。\n         * 如果您认为左边小于右边，请返回负整数。\n         * 如果您认为左边等于右边，请返回0。\n         * 只要这么干，默认就是升序排序\n         */\n//        if(this.age > o.age) {\n//            return 1;\n//        }else if(this.age < o.age) {\n//            return -1;\n//        }\n//        return 0;\n        //return this.age - o.age; // 升序。\n        return o.age - this.age; // 降序。\n    }\n\n    /**\n     * 获取\n     * @return name\n     */\n    public String getName() {\n        return name;\n    }\n\n    /**\n     * 设置\n     * @param name\n     */\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    /**\n     * 获取\n     * @return age\n     */\n    public int getAge() {\n        return age;\n    }\n\n    /**\n     * 设置\n     * @param age\n     */\n    public void setAge(int age) {\n        this.age = age;\n    }\n\n    /**\n     * 获取\n     * @return gender\n     */\n    public char getGender() {\n        return gender;\n    }\n\n    /**\n     * 设置\n     * @param gender\n     */\n    public void setGender(char gender) {\n        this.gender = gender;\n    }\n\n    /**\n     * 获取\n     * @return height\n     */\n    public double getHeight() {\n        return height;\n    }\n\n    /**\n     * 设置\n     * @param height\n     */\n    public void setHeight(double height) {\n        this.height = height;\n    }\n\n    @Override\n    public String toString() {\n        return \"Student{\" +\n                \"name='\" + name + '\\'' +\n                \", age=\" + age +\n                \", gender=\" + gender +\n                \", height=\" + height +\n                '}' + \"\\n\";\n    }\n\n\n}",
+        "language": "Java"
+      },
+      {
+        "content": "public class LambdaTest1 {\n    public static void main(String[] args) {\n        // 目标：认识Lambda是如何简化匿名内部类的。\n        Animal a1 = new Animal() {\n            @Override\n            public void run() {\n                System.out.println(\"🐅跑的贼快~~~~\");\n            }\n        };\n        a1.run();\n\n        // 错误示范：Lambda并不能简化所有匿名内部类的代码。只能简化函数式接口的匿名内部类。\n//        Animal a2 = () -> {\n//            System.out.println(\"🐅跑的贼快~~~~\");\n//        };\n//        a2.run();\n\n        Swimming s1 = new Swimming() {\n            @Override\n            public void swim() {\n                System.out.println(\"学生🏊‍贼溜~~~~\");\n            }\n        };\n        s1.swim();\n\n        // Lambda可以简化函数式接口的匿名内部类\n        // 可以上下文推断出真实的代码形式！\n        Swimming s2 = () -> {\n                System.out.println(\"老师🏊‍贼溜~~~~\");\n        };\n        s2.swim();\n    }\n}\n\n@FunctionalInterface // 函数式接口中有且仅有一个抽象方法\ninterface Swimming{\n    void swim();\n}\n\nabstract class Animal{\n    public abstract void run();\n}",
+        "language": "Java"
+      }
+    ],
+    "images": [
+      {
+        "filename": "常用api2_1764424694297_0_666b86f3.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\常用api2_1764424694297_0_666b86f3.png"
+      },
+      {
+        "filename": "常用api2_1764428974767_1_43a38e7b.png",
+        "filepath": "C:\\Users\\Hasee\\AppData\\Roaming\\Notee\\images\\常用api2_1764428974767_1_43a38e7b.png"
+      }
+    ],
+    "remarks": "",
+    "created_at": "2025-11-29T21:21:05.324553",
+    "updated_at": "2025-11-29T23:18:19.645320",
+    "is_archived": false
+  },
+  {
+    "note_id": "1764429654.30932",
+    "title": "常用API2继续",
+    "content": "静态方法的引用 类名：：静态方法。\n如果某个Lambda表达式里只是调用一个静态方法，并且前后参数的形式一致，就可以使用静态方法引l用。\n\n实例方法的引用     对象名：：实例方法\n使用场景\n）如果某个Lambda表达式里只是调用一个实例方法，并且前后参数的形式一致，就可以使用实例方法引I用。\n\n特定类型的方法引用   类型：：方法。\n使用场景\n●如果某个Lambda表达式里只是调用一个实例方法，并且前面参数列表中的第一个参数是作为方法的主调，\n后面的所有参数都是作为该实例方法的入参的，则此时就可以使用特定类型的方法引用。\n\n构造器引用   类名：：new。\n使用场景\n）如果某个Lambda表达式里只是在创建对象，并且前后参数情况一致，就可以使用构造器引I用。",
+    "category": "JAVA",
+    "tags": [],
+    "code_blocks": [
+      {
+        "content": "import java.util.Arrays;\n\npublic class Test1 {\n    public static void main(String[] args) {\n        // 目标：理解静态方法引用。\n        Student[] students = new Student[4]; // students = [null, null, null, null]\n        students[0] = new Student(\"周芷若\", 21, '女', 169.3);\n        students[1] = new Student(\"殷素素\", 38, '女', 172.2);\n        students[2] = new Student(\"小昭\", 19, '女', 168.5);\n        students[3] = new Student(\"张无忌\", 23, '男', 183.5);\n\n//        Arrays.sort(students, (o1, o2) -> Double.compare(o1.getHeight(), o2.getHeight()));\n//\n//        Arrays.sort(students, (o1, o2) -> Student.compareByHeight(o1, o2));\n\n        // 静态方法引用。\n        Arrays.sort(students, Student::compareByHeight); // 终极简化代码！\n\n        System.out.println(Arrays.toString(students));\n\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "import java.util.Arrays;\n\npublic class Test2 {\n    public static void main(String[] args) {\n        // 目标：理解实例方法引用。\n        Student[] students = new Student[4]; // students = [null, null, null, null]\n        students[0] = new Student(\"周芷若\", 21, '女', 169.3);\n        students[1] = new Student(\"殷素素\", 38, '女', 172.2);\n        students[2] = new Student(\"小昭\", 19, '女', 168.5);\n        students[3] = new Student(\"张无忌\", 23, '男', 183.5);\n\n        // Arrays.sort(students, (o1, o2) -> Double.compare(o1.getHeight(), o2.getHeight()));\n\n        Test2 t = new Test2();\n        // Arrays.sort(students, (o1, o2) -> t.compare(o1, o2));\n        Arrays.sort(students, t::compare);\n\n        System.out.println(Arrays.toString(students));\n    }\n\n    public int compare(Student o1, Student o2){\n        return Double.compare(o1.getHeight(), o2.getHeight());\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "public class Test3 {\n    public static void main(String[] args) {\n        // 目标：特定类型的方法引用。\n        String[] names = {\"dlei\", \"Angela\", \"baby\", \"caocao\", \"Coach\", \"曹操\" ,\"deby\", \"eason\", \"andy\"};\n\n        // 对他们排序(默认按照首字母编号排序)\n        // 拓展（忽略大小写排序）\n//        Arrays.sort(names, new Comparator<String>() {\n//            @Override\n//            public int compare(String o1, String o2) {\n//                // o1  Angela\n//                // o2  andy\n//                return o1.compareToIgnoreCase(o2);\n//            }\n//        });\n//\n//        Arrays.sort(names, ( o1,  o2) -> o1.compareToIgnoreCase(o2));\n\n        Arrays.sort(names, String::compareToIgnoreCase);\n\n        System.out.println(Arrays.toString(names));\n\n    }\n}",
+        "language": "Java"
+      },
+      {
+        "content": "public class Test4 {\n    public static void main(String[] args) {\n        // 目标：掌握构造器引用。\n//        Create c1 = new Create() {\n//            @Override\n//            public Car createCar(String name) {\n//                return new Car(name);\n//            }\n//        };\n        // Create c1 = name -> new Car(name) ;\n        Create c1 = Car::new;\n        Car car = c1.createCar(\"布加迪威龙\");\n        System.out.println(car);\n    }\n}\n\n@FunctionalInterface // 函数式接口\ninterface Create{\n    Car createCar(String name);\n}\n\nclass Car{\n    private String name;\n\n    public Car() {\n    }\n\n    public Car(String name) {\n        this.name = name;\n    }\n\n    public String getName() {\n        return name;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    @Override\n    public String toString() {\n        return \"Car{\" +\n                \"name='\" + name + '\\'' +\n                '}';\n    }\n}",
+        "language": "Java"
+      }
+    ],
+    "images": [],
+    "remarks": "",
+    "created_at": "2025-11-29T23:20:54.310477",
+    "updated_at": "2025-11-29T23:36:34.055342",
+    "is_archived": false
+  }
+]
