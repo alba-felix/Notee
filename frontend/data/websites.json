@@ -1,0 +1,1278 @@
+{
+  "AI工具": [
+    {
+      "name": "豆包",
+      "description": "字节跳动推出的智能对话助手，其2.0版本基础模型能力和企业级Agent能力大幅提升，日均Tokens使用量居中国第一、全球第三[citation:5]。支持办公创作、文案写作、代码生成等多种功能，全能AI助手！",
+      "url": "https://www.doubao.com",
+      "icon": "frontend/assets/icons/www_doubao_com.png"
+    },
+    {
+      "name": "DeepSeek",
+      "description": "深度求索推出的高性能大语言模型，以高性价比和强大推理能力著称。即将发布的V4版本将原生支持图片、视频和文本的多模态AI生成能力[citation:8]。联合清华北大推出的DualPath推理系统大幅提升智能体场景下的GPU利用率[citation:2]。",
+      "url": "https://www.deepseek.com",
+      "icon": "frontend/assets/icons/www_deepseek_com.ico"
+    },
+    {
+      "name": "智谱清言",
+      "description": "智谱AI推出的对话助手，基于GLM系列模型。最新GLM-5旗舰模型专为复杂系统工程与长程Agent任务设计，在代码逻辑密度和系统工程能力上对标Claude Opus 4.5[citation:3][citation:9]。支持联网搜索、多轮对话、文档处理等功能。",
+      "url": "https://chatglm.cn",
+      "icon": "frontend/assets/icons/chatglm_cn.ico"
+    },
+    {
+      "name": "通义千问",
+      "description": "阿里云推出的超大规模语言模型，Qwen3.5版本采用混合专家架构，397B总参数仅激活17B，支持高达262,144 tokens上下文，可原生处理文本、图像和视频[citation:4][citation:10]。在指令遵循准确率上表现优异，支持201种语言和方言。",
+      "url": "https://qianwen.aliyun.com",
+      "icon": "frontend/assets/icons/qianwen_aliyun_com.svg"
+    },
+    {
+      "name": "MiniMax",
+      "description": "MiniMax推出的AI对话产品，其Agent平台升级推出MaxClaw模式，支持一键部署OpenClaw，可访问超过10,000个专业AI智能体，涵盖内容创作、金融分析等领域[citation:6]。内置图像生成、视频创作和应用部署能力。",
+      "url": "https://www.minimax.com",
+      "icon": "frontend/assets/icons/www_minimax_com.ico"
+    },
+    {
+      "name": "文心一言",
+      "description": "百度推出的知识增强大语言模型，支持中文对话、知识问答和内容创作。其文心快码(Comate)在IDC评估中Agent能力和工程化落地获双满分，C++生成质量行业第一[citation:7]。",
+      "url": "https://yiyan.baidu.com",
+      "icon": "frontend/assets/icons/yiyan_baidu_com.ico"
+    },
+    {
+      "name": "ChatGPT",
+      "description": "OpenAI推出的强大AI对话助手，深度研究(Deep Research)功能可在5-30分钟内自动生成包含完整引用的研究报告，极少出现幻觉[citation:1]。支持多模态交互、智能问答和创作。",
+      "url": "https://chat.openai.com",
+      "icon": "frontend/assets/icons/chat_openai_com.png"
+    },
+    {
+      "name": "Claude",
+      "description": "Anthropic推出的AI助手，在写作和编程方面表现最强[citation:1]。能精准模仿用户写作风格，对指令遵循能力极强，是写作领域的首选工具。",
+      "url": "https://claude.ai",
+      "icon": "frontend/assets/icons/claude_ai.png"
+    },
+    {
+      "name": "Gemini",
+      "description": "Google推出的多模态AI模型，在图像与视频生成、辅助学习方面能力出众[citation:1]。支持长上下文理解，可处理复杂推理任务。",
+      "url": "https://gemini.google.com",
+      "icon": "frontend/assets/icons/gemini_google_com.svg"
+    },
+    {
+      "name": "Perplexity",
+      "description": "AI驱动的答案引擎，直接提供带有引用来源的答案。其推出的AI浏览器Comet可实现网页浏览自动化，充当网页浏览私人助理[citation:1]。搜索结果无广告，支持对话记忆和深入追问。",
+      "url": "https://www.perplexity.ai",
+      "icon": "frontend/assets/icons/www_perplexity_ai.png"
+    },
+    {
+      "name": "NotebookLM",
+      "description": "Google推出的AI研究工具，能基于用户上传的文档（PDF、网页等）进行总结、问答，所有回答严格限定在文档范围内，几乎不会出现幻觉[citation:1]。可一键生成播客风格音频摘要。",
+      "url": "https://notebooklm.google.com",
+      "icon": "frontend/assets/icons/notebooklm_google_com.png"
+    },
+    {
+      "name": "Cursor",
+      "description": "AI代码编辑器，通过内置聊天界面生成和编辑代码，端到端编辑延迟低于600ms[citation:7]。支持在GPT-4o、Claude 3.5与DeepSeek模型间无缝切换，是'氛围编程'Vibe Coding)的代表性工具[citation:1]。",
+      "url": "https://www.cursor.com",
+      "icon": "frontend/assets/icons/www_cursor_com.png"
+    },
+    {
+      "name": "ElevenLabs",
+      "description": "领先的AI语音生成工具，提供从文本到高度逼真语音的转换、声音克隆（10秒即可即时克隆）和自动配音功能[citation:1]。声音极具情感和表现力。",
+      "url": "https://elevenlabs.io",
+      "icon": "frontend/assets/icons/elevenlabs_io.ico"
+    },
+    {
+      "name": "HeyGen",
+      "description": "AI视频数字人生成平台，可将照片或视频转化为数字分身[citation:1]。视频翻译功能支持175多种语言，能保留原说话者音色并实现精准口型同步。",
+      "url": "https://www.heygen.com",
+      "icon": "frontend/assets/icons/www_heygen_com.ico"
+    },
+    {
+      "name": "Suno",
+      "description": "AI音乐生成工具，能根据文字提示创作包含人声和乐器的完整歌曲[citation:1]。生成的音乐质量已与人类创作难辨真假，支持多种音乐风格。",
+      "url": "https://suno.com",
+      "icon": "frontend/assets/icons/suno_com.ico"
+    },
+    {
+      "name": "Gamma",
+      "description": "AI演示文稿生成工具，根据简单提示词即可快速生成具有现代感和精美排版的幻灯片[citation:1]。支持多页数、多风格选择，几分钟内即可完成专业演示文稿。",
+      "url": "https://gamma.app",
+      "icon": "frontend/assets/icons/gamma_app.png"
+    },
+    {
+      "name": "绘蛙",
+      "description": "AI电商营销工具，免费生成商品图、模特图、场景图，提升电商运营效率！",
+      "url": "https://www.huivaa.com",
+      "icon": ""
+    },
+    {
+      "name": "TRAE 编程",
+      "description": "AI编程IDE，支持多种编程语言，智能代码补全、调试、重构，Vibe Coding必备工具！",
+      "url": "https://www.trae.ai",
+      "icon": "frontend/assets/icons/www_trae_ai.png"
+    },
+    {
+      "name": "AiPPT",
+      "description": "AI快速生成高质量PPT，支持多种模板和风格，一键生成专业演示文稿！",
+      "url": "https://www.aippt.com",
+      "icon": "frontend/assets/icons/www_aippt_com.png"
+    },
+    {
+      "name": "秘塔AI搜索",
+      "description": "最好用的AI搜索工具，没有广告，直达结果，支持多种搜索模式和智能推荐！",
+      "url": "https://metaso.cn",
+      "icon": "frontend/assets/icons/metaso_cn.png"
+    },
+    {
+      "name": "秒哒",
+      "description": "无代码AI应用开发平台，一句话做应用，无需编程基础，快速创建AI应用！",
+      "url": "https://www.miaoda.com",
+      "icon": "frontend/assets/icons/www_miaoda_com.png"
+    },
+    {
+      "name": "堆友AI",
+      "description": "免费AI绘画和生图神器，支持多种艺术风格，一键生成高质量艺术作品！",
+      "url": "https://www.duiyou.com",
+      "icon": ""
+    },
+    {
+      "name": "n8n",
+      "description": "开源低代码工作流自动化工具，通过可视化节点编辑器连接不同应用[citation:1]。适合技术团队创建复杂的AI智能体和自动化流程，支持私有化部署保障数据安全。",
+      "url": "https://n8n.io",
+      "icon": "frontend/assets/icons/n8n_io.png"
+    },
+    {
+      "name": "Runway",
+      "description": "AI视频生成和编辑平台，提供Gen-3 Alpha等模型，支持文本/图像生成视频、运动编辑等功能[citation:1]。助力独立创作者和小团队制作专业级视频内容。",
+      "url": "https://runwayml.com",
+      "icon": "frontend/assets/icons/runwayml_com.png"
+    },
+    {
+      "name": "Notion AI",
+      "description": "集成在Notion工作空间中的AI层，可智能搜索、总结文档、生成内容，并将会议记录自动转化为任务[citation:1]。极大提升知识管理效率。",
+      "url": "https://www.notion.so",
+      "icon": "frontend/assets/icons/www_notion_so.ico"
+    },
+    {
+      "name": "Zapier",
+      "description": "无代码自动化工具，连接超过5000个应用，通过创建自动化工作流减少手动数据传输[citation:1]。其AI功能允许用户用自然语言描述自动化需求。",
+      "url": "https://zapier.com",
+      "icon": "frontend/assets/icons/zapier_com.png"
+    },
+    {
+      "name": "Napkin AI",
+      "description": "将文字转化为视觉图表的工具，如思维导图、流程图、信息图等[citation:1]。帮助用户将复杂想法快速可视化，几秒钟内即可生成最相关的图表。",
+      "url": "https://www.napkin.ai",
+      "icon": "frontend/assets/icons/www_napkin_ai.png"
+    }
+  ],
+  "办公工具": [
+    {
+      "name": "WPS Office",
+      "description": "金山办公软件，支持文档、表格、演示等多种办公场景，云端协作！",
+      "url": "https://www.wps.cn",
+      "icon": "frontend/assets/icons/www_wps_cn.png"
+    },
+    {
+      "name": "腾讯文档",
+      "description": "腾讯推出的在线文档协作工具，支持多人实时编辑，云端存储！",
+      "url": "https://docs.qq.com",
+      "icon": "frontend/assets/icons/docs_qq_com.png"
+    },
+    {
+      "name": "石墨文档",
+      "description": "轻量级在线协作文档，支持实时协作，简洁高效！",
+      "url": "https://shimo.im",
+      "icon": "frontend/assets/icons/shimo_im.ico"
+    },
+    {
+      "name": "飞书",
+      "description": "字节跳动推出的企业协作平台，集成文档、会议、日历等功能！",
+      "url": "https://www.feishu.cn",
+      "icon": "frontend/assets/icons/www_feishu_cn.png"
+    }
+  ],
+  "设计工具": [
+    {
+      "name": "Figma",
+      "description": "强大的在线界面设计工具，支持多人协作，原型设计！",
+      "url": "https://www.figma.com",
+      "icon": "frontend/assets/icons/www_figma_com.png"
+    },
+    {
+      "name": "Canva",
+      "description": "在线设计平台，支持海报、演示文稿、社交媒体图片等设计！",
+      "url": "https://www.canva.com",
+      "icon": "frontend/assets/icons/www_canva_com.png"
+    },
+    {
+      "name": "稿定设计",
+      "description": "国内在线设计平台，支持海报、PPT、视频等设计！",
+      "url": "https://www.gaoding.com",
+      "icon": "frontend/assets/icons/www_gaoding_com.ico"
+    },
+    {
+      "name": "即时设计",
+      "description": "在线设计工具，支持快速设计，模板丰富！",
+      "url": "https://www.js.design",
+      "icon": ""
+    }
+  ],
+  "学习资源": [
+    {
+      "name": "OpenAI 官方文档",
+      "description": "OpenAI 官方文档，包含 API 文档、最佳实践和教程！",
+      "url": "https://platform.openai.com/docs",
+      "icon": "frontend/assets/icons/platform_openai_com.png"
+    },
+    {
+      "name": "Anthropic 官方文档",
+      "description": "Anthropic 官方文档，包含 Claude API 文档和使用指南！",
+      "url": "https://docs.anthropic.com",
+      "icon": "frontend/assets/icons/docs_anthropic_com.png"
+    },
+    {
+      "name": "MDN Web 文档",
+      "description": "Mozilla 开发者网络，提供 Web 技术文档和教程！",
+      "url": "https://developer.mozilla.org",
+      "icon": "frontend/assets/icons/developer_mozilla_org.ico"
+    },
+    {
+      "name": "W3School",
+      "description": "Web 开发教程网站，提供 HTML、CSS、JavaScript 等教程！",
+      "url": "https://www.w3school.com.cn",
+      "icon": "frontend/assets/icons/www_w3school_com_cn.png"
+    }
+  ],
+  "生活服务": [
+    {
+      "name": "淘宝",
+      "description": "亚洲最大的综合购物平台，数亿商品，应有尽有，网购首选！",
+      "url": "https://www.taobao.com",
+      "icon": "frontend/assets/icons/www_taobao_com.png"
+    },
+    {
+      "name": "京东",
+      "description": "品质生活购物平台，正品保障，快速配送，为您提供优质购物体验！",
+      "url": "https://www.jd.com",
+      "icon": "frontend/assets/icons/www_jd_com.ico"
+    },
+    {
+      "name": "美团",
+      "description": "生活服务平台，提供外卖、酒店、旅游等服务！",
+      "url": "https://www.meituan.com",
+      "icon": "frontend/assets/icons/www_meituan_com.ico"
+    },
+    {
+      "name": "饿了么",
+      "description": "在线外卖平台，提供各种美食外卖，快速配送！",
+      "url": "https://www.ele.me",
+      "icon": "frontend/assets/icons/www_ele_me.png"
+    }
+  ],
+  "娱乐休闲": [
+    {
+      "name": "知乎",
+      "description": "中文互联网高质量的问答社区，分享知识、经验和见解，发现更大的世界！",
+      "url": "https://www.zhihu.com",
+      "icon": "frontend/assets/icons/www_zhihu_com.png"
+    },
+    {
+      "name": "抖音",
+      "description": "短视频平台，记录美好生活，海量视频内容，智能推荐，让你爱上创作和分享！",
+      "url": "https://www.douyin.com",
+      "icon": "frontend/assets/icons/www_douyin_com.png"
+    },
+    {
+      "name": "B站",
+      "description": "国内知名的视频弹幕网站，拥有丰富的动漫、游戏、科技等内容！",
+      "url": "https://www.bilibili.com",
+      "icon": "frontend/assets/icons/www_bilibili_com.png"
+    },
+    {
+      "name": "网易云音乐",
+      "description": "专注于发现与分享的音乐产品，海量曲库，个性化推荐！",
+      "url": "https://music.163.com",
+      "icon": "frontend/assets/icons/music_163_com.ico"
+    }
+  ],
+  "收藏夹栏/工具网": [
+    {
+      "name": "在线图片验证码识别平台-图像验证码识别打码平台-图片验证码打码平台-图灵",
+      "url": "http://tulingtech.xyz/#/",
+      "description": "在线图片验证码识别平台-图像验证码识别打码平台-图片验证码打码平台-图灵",
+      "icon": "frontend/assets/icons/tulingtech_xyz.png"
+    },
+    {
+      "name": "iconfont-阿里巴巴矢量图标库",
+      "url": "https://www.iconfont.cn/",
+      "description": "iconfont-阿里巴巴矢量图标库",
+      "icon": "frontend/assets/icons/www_iconfont_cn.svg"
+    },
+    {
+      "name": "Stack Overflow中文网",
+      "url": "https://stackoverflow.org.cn/",
+      "description": "Stack Overflow中文网",
+      "icon": "frontend/assets/icons/stackoverflow_org_cn.ico"
+    },
+    {
+      "name": "爱给网_音效配乐_3D模型_视频素材_免费下载",
+      "url": "https://www.aigei.com/",
+      "description": "爱给网_音效配乐_3D模型_视频素材_免费下载",
+      "icon": "frontend/assets/icons/www_aigei_com.png"
+    },
+    {
+      "name": "易撰自媒体工具_让内容创作更高效",
+      "url": "https://zmt.yizhuan5.com/work.html#1-2",
+      "description": "易撰自媒体工具_让内容创作更高效",
+      "icon": "frontend/assets/icons/zmt_yizhuan5_com.png"
+    },
+    {
+      "name": "菜鸟教程 - 学的不仅是技术，更是梦想！",
+      "url": "https://www.runoob.com/",
+      "description": "菜鸟教程 - 学的不仅是技术，更是梦想！",
+      "icon": "frontend/assets/icons/www_runoob_com.ico"
+    },
+    {
+      "name": "Learn to Code — For Free — Coding Courses for Busy People",
+      "url": "https://www.freecodecamp.org/",
+      "description": "Learn to Code — For Free — Coding Courses for Busy People",
+      "icon": "frontend/assets/icons/www_freecodecamp_org.png"
+    },
+    {
+      "name": "工作台 - Gitee.com",
+      "url": "https://gitee.com/",
+      "description": "工作台 - Gitee.com",
+      "icon": "frontend/assets/icons/gitee_com.png"
+    },
+    {
+      "name": "安装 Arduino 开发环境 | 极客侠GeeksMan",
+      "url": "https://docs.geeksman.com/esp32/Arduino/02.esp32-arduino-install.html",
+      "description": "安装 Arduino 开发环境 | 极客侠GeeksMan",
+      "icon": "frontend/assets/icons/docs_geeksman_com.png"
+    },
+    {
+      "name": "首页 | 极客侠GeeksMan",
+      "url": "https://jonathanluo0604.gitee.io/",
+      "description": "首页 | 极客侠GeeksMan",
+      "icon": ""
+    },
+    {
+      "name": "天机阁-开启知识与技能的独一无二之旅",
+      "url": "https://tianjg.com/",
+      "description": "天机阁-开启知识与技能的独一无二之旅",
+      "icon": "frontend/assets/icons/tianjg_com.png"
+    },
+    {
+      "name": "视监系统！",
+      "url": "https://audio.hygzs.xyz/td/",
+      "description": "视监系统！",
+      "icon": ""
+    },
+    {
+      "name": "在线工具 - 你的工具箱",
+      "url": "https://tool.lu/",
+      "description": "在线工具 - 你的工具箱",
+      "icon": "frontend/assets/icons/tool_lu.png"
+    },
+    {
+      "name": "游民驿站",
+      "url": "https://www.gamezys.cn/",
+      "description": "游民驿站",
+      "icon": "frontend/assets/icons/www_gamezys_cn.png"
+    },
+    {
+      "name": "前台解析中心 |91度盘解析",
+      "url": "https://pan.91ios.fun/user?usersettings",
+      "description": "前台解析中心 |91度盘解析",
+      "icon": "frontend/assets/icons/pan_91ios_fun.png"
+    },
+    {
+      "name": "‍​‌​​​‍‬‍​⁠⁠﻿​﻿﻿‌​​​﻿﻿​​﻿⁠‬‌​﻿‍​‬​‌​﻿﻿‍‬‌‌​​​‍‌​​​搁浅DeepSeek工具箱(全程免费/持续更新中...) - 飞书云文档",
+      "url": "https://vcnajzw9f4sf.feishu.cn/wiki/VaLHwkT7Fiu6XUkM9Trc49uUnwh",
+      "description": "‍​‌​​​‍‬‍​⁠⁠﻿​﻿﻿‌​​​﻿﻿​​﻿⁠‬‌​﻿‍​‬​‌​﻿﻿‍‬‌‌​​​‍‌​​​搁浅DeepSeek工具箱(全程免费/持续更新中...) - 飞书云文档",
+      "icon": "frontend/assets/icons/vcnajzw9f4sf_feishu_cn.png"
+    },
+    {
+      "name": "2925邮箱-无限邮",
+      "url": "https://www.2925.com/#/",
+      "description": "2925邮箱-无限邮",
+      "icon": "frontend/assets/icons/www_2925_com.ico"
+    },
+    {
+      "name": "Deepseek 聊天机器人",
+      "url": "http://127.0.0.1:5000/",
+      "description": "Deepseek 聊天机器人",
+      "icon": ""
+    },
+    {
+      "name": "都都软件站 - 更快更安全的免费下载网站",
+      "url": "https://www.dudues.com/",
+      "description": "都都软件站 - 更快更安全的免费下载网站",
+      "icon": "frontend/assets/icons/www_dudues_com.png"
+    },
+    {
+      "name": "AskManyAI",
+      "url": "https://dazi.co/index",
+      "description": "AskManyAI",
+      "icon": "frontend/assets/icons/dazi_co.png"
+    },
+    {
+      "name": "玩转导航",
+      "url": "http://nav.cxycsx.vip/",
+      "description": "玩转导航",
+      "icon": ""
+    },
+    {
+      "name": "Free Text to Speech - 免费文本转语音 | Noiz AI",
+      "url": "https://noiz.ai/tts/creation",
+      "description": "Free Text to Speech - 免费文本转语音 | Noiz AI",
+      "icon": "frontend/assets/icons/noiz_ai.ico"
+    },
+    {
+      "name": "「csdn」的搜索结果-小樊智媒",
+      "url": "https://fransuper.cn/?cat=&s=csdn",
+      "description": "「csdn」的搜索结果-小樊智媒",
+      "icon": "frontend/assets/icons/fransuper_cn.png"
+    },
+    {
+      "name": "CNPM Binaries Mirror",
+      "url": "https://registry.npmmirror.com/binary.html?path=chromedriver",
+      "description": "CNPM Binaries Mirror",
+      "icon": ""
+    },
+    {
+      "name": "检查您的 IP 地址 | MyIP.com",
+      "url": "https://www.myip.com/",
+      "description": "检查您的 IP 地址 | MyIP.com",
+      "icon": "frontend/assets/icons/www_myip_com.png"
+    },
+    {
+      "name": "下载最佳免费桌面全文搜索工具 |Anytxt",
+      "url": "https://anytxt.net/download/",
+      "description": "下载最佳免费桌面全文搜索工具 |Anytxt",
+      "icon": "frontend/assets/icons/anytxt_net.png"
+    },
+    {
+      "name": "CodeFlying-码上飞，AI 人工智能自动软件、小程序、APP应用开发平台",
+      "url": "https://www.codeflying.net/?source=baidu&source_id=1005238211219#/index",
+      "description": "CodeFlying-码上飞，AI 人工智能自动软件、小程序、APP应用开发平台",
+      "icon": "frontend/assets/icons/www_codeflying_net.ico"
+    },
+    {
+      "name": "迷你软件",
+      "url": "https://www.mn-soft.com/",
+      "description": "迷你软件",
+      "icon": "frontend/assets/icons/www_mn-soft_com.png"
+    }
+  ],
+  "收藏夹栏/工具网2/工具网2-1": [
+    {
+      "name": "态势监测",
+      "url": "https://hipcityreg-situation-monitor.vercel.app/",
+      "description": "态势监测",
+      "icon": ""
+    },
+    {
+      "name": "Flow-Launcher/Flow.Launcher: :mag: Quick file search & app launcher for Windows with community-made plugins",
+      "url": "https://github.com/Flow-Launcher/Flow.Launcher",
+      "description": "Flow-Launcher/Flow.Launcher: :mag: Quick file search & app launcher for Windows with community-made plugins",
+      "icon": "frontend/assets/icons/github_com.png"
+    }
+  ],
+  "收藏夹栏/工具网2": [
+    {
+      "name": "云盘",
+      "url": "http://disk.1473.cn/softwaredownload",
+      "description": "云盘",
+      "icon": ""
+    },
+    {
+      "name": "模块 — PyQt 文档 v5.15.7",
+      "url": "https://www.riverbankcomputing.com/static/Docs/PyQt5/module_index.html",
+      "description": "模块 — PyQt 文档 v5.15.7",
+      "icon": "frontend/assets/icons/www_riverbankcomputing_com.ico"
+    },
+    {
+      "name": "https://rawchat.cn/",
+      "url": "https://rawchat.cn/",
+      "description": "https://rawchat.cn/",
+      "icon": "frontend/assets/icons/rawchat_cn.svg"
+    },
+    {
+      "name": "搜脚本加速站-全网搜脚本",
+      "url": "https://soujiaoben.org/#/",
+      "description": "搜脚本加速站-全网搜脚本",
+      "icon": "frontend/assets/icons/soujiaoben_org.png"
+    },
+    {
+      "name": "GitHub Desktop 完整使用教程 - github中文站",
+      "url": "https://githubrsp.com/201.html",
+      "description": "GitHub Desktop 完整使用教程 - github中文站",
+      "icon": "frontend/assets/icons/githubrsp_com.png"
+    },
+    {
+      "name": "Gitstar Ranking - Top GitHub users and repositories",
+      "url": "https://gitstar-ranking.com/",
+      "description": "Gitstar Ranking - Top GitHub users and repositories",
+      "icon": "frontend/assets/icons/gitstar-ranking_com.ico"
+    },
+    {
+      "name": "当今 GitHub 上的存储库趋势",
+      "url": "https://github.com/trending",
+      "description": "当今 GitHub 上的存储库趋势",
+      "icon": "frontend/assets/icons/github_com.png"
+    },
+    {
+      "name": "ViewTurbo - 下载 - 视野涡轮",
+      "url": "https://web.vtpro.xyz/zh/download",
+      "description": "ViewTurbo - 下载 - 视野涡轮",
+      "icon": "frontend/assets/icons/web_vtpro_xyz.png"
+    },
+    {
+      "name": "打字鸭 - 专业的在线打字练习平台",
+      "url": "https://daziya.com/game",
+      "description": "打字鸭 - 专业的在线打字练习平台",
+      "icon": "frontend/assets/icons/daziya_com.svg"
+    },
+    {
+      "name": "懒人Excel - Excel 函数公式、操作技巧、数据分析、图表模板、VBA、数据透视表教程",
+      "url": "https://www.lanrenexcel.com/",
+      "description": "懒人Excel - Excel 函数公式、操作技巧、数据分析、图表模板、VBA、数据透视表教程",
+      "icon": "frontend/assets/icons/www_lanrenexcel_com.ico"
+    },
+    {
+      "name": "工作台 · 语雀",
+      "url": "https://www.yuque.com/dashboard",
+      "description": "工作台 · 语雀",
+      "icon": "frontend/assets/icons/www_yuque_com.png"
+    },
+    {
+      "name": "吞噬星空2起源大陆TXT下载-最新章节无错字精校版-TXT格式免费下载-得奇小说网",
+      "url": "https://www.deqixs.com/xiaoshuo/164/txt.html#dir",
+      "description": "吞噬星空2起源大陆TXT下载-最新章节无错字精校版-TXT格式免费下载-得奇小说网",
+      "icon": ""
+    },
+    {
+      "name": "Go 编程语言规范 - Go 编程语言",
+      "url": "https://go.dev/ref/spec",
+      "description": "Go 编程语言规范 - Go 编程语言",
+      "icon": "frontend/assets/icons/go_dev.png"
+    },
+    {
+      "name": "ucbug软件站 - 免费软件下载_绿色软件下载",
+      "url": "https://www.ucbug.com/",
+      "description": "ucbug软件站 - 免费软件下载_绿色软件下载",
+      "icon": "frontend/assets/icons/www_ucbug_com.png"
+    },
+    {
+      "name": "www.blackbox.ai",
+      "url": "https://www.blackbox.ai/",
+      "description": "www.blackbox.ai",
+      "icon": "frontend/assets/icons/www_blackbox_ai.png"
+    },
+    {
+      "name": "快连VPN - 永远能连得上的VPN下载 【快连官网】",
+      "url": "https://www.cc-kuailian.com.cn/",
+      "description": "快连VPN - 永远能连得上的VPN下载 【快连官网】",
+      "icon": ""
+    },
+    {
+      "name": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+      "url": "https://leetcode.cn/",
+      "description": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+      "icon": "frontend/assets/icons/leetcode_cn.png"
+    },
+    {
+      "name": "阿里云权益中心_助力学生、开发者、企业用云快速上云-阿里云",
+      "url": "https://www.aliyun.com/benefit?utm_content=se_1019887613",
+      "description": "阿里云权益中心_助力学生、开发者、企业用云快速上云-阿里云",
+      "icon": "frontend/assets/icons/www_aliyun_com.ico"
+    },
+    {
+      "name": "Redis - The Real-time Data Platform",
+      "url": "https://redis.io/",
+      "description": "Redis - The Real-time Data Platform",
+      "icon": "frontend/assets/icons/redis_io.ico"
+    },
+    {
+      "name": "在线Cron表达式生成器",
+      "url": "https://cron.qqe2.com/",
+      "description": "在线Cron表达式生成器",
+      "icon": "frontend/assets/icons/cron_qqe2_com.ico"
+    },
+    {
+      "name": "米壳AI - Medio.cool 助力企业海外视频推广",
+      "url": "https://medio.cool/",
+      "description": "米壳AI - Medio.cool 助力企业海外视频推广",
+      "icon": "frontend/assets/icons/medio_cool.ico"
+    },
+    {
+      "name": "查看系统上任何已安装/连接的 USB 设备",
+      "url": "https://www.nirsoft.net/utils/usb_devices_view.html",
+      "description": "查看系统上任何已安装/连接的 USB 设备",
+      "icon": "frontend/assets/icons/www_nirsoft_net.png"
+    },
+    {
+      "name": "NirSoft - 免费软件实用程序：密码恢复、系统实用程序、桌面实用程序",
+      "url": "https://www.nirsoft.net/",
+      "description": "NirSoft - 免费软件实用程序：密码恢复、系统实用程序、桌面实用程序",
+      "icon": "frontend/assets/icons/www_nirsoft_net.png"
+    },
+    {
+      "name": "h3320027175",
+      "url": "https://ollama.com/h3320027175",
+      "description": "h3320027175",
+      "icon": "frontend/assets/icons/ollama_com.png"
+    },
+    {
+      "name": "推荐优美的Pyqt/Pyside界面模板_pyqt5界面模板-CSDN博客",
+      "url": "https://blog.csdn.net/sluck_0430/article/details/128138801",
+      "description": "推荐优美的Pyqt/Pyside界面模板_pyqt5界面模板-CSDN博客",
+      "icon": "frontend/assets/icons/blog_csdn_net.png"
+    },
+    {
+      "name": "2025 年最佳开源 Windows 软件",
+      "url": "https://sourceforge.net/directory/windows/",
+      "description": "2025 年最佳开源 Windows 软件",
+      "icon": "frontend/assets/icons/sourceforge_net.png"
+    },
+    {
+      "name": "Gui编程 - Python Wiki",
+      "url": "https://wiki.python.org/moin/GuiProgramming",
+      "description": "Gui编程 - Python Wiki",
+      "icon": "frontend/assets/icons/wiki_python_org.png"
+    },
+    {
+      "name": "day01-项目搭建 - 飞书云文档",
+      "url": "https://ksg50j5gph.feishu.cn/docx/UOaxddZhYoivp9xKdV2csREenMb",
+      "description": "day01-项目搭建 - 飞书云文档",
+      "icon": "frontend/assets/icons/ksg50j5gph_feishu_cn.png"
+    },
+    {
+      "name": "CodeForge | AI-Powered IDE · Streamlit",
+      "url": "https://code-forge.streamlit.app/",
+      "description": "CodeForge | AI-Powered IDE · Streamlit",
+      "icon": ""
+    },
+    {
+      "name": "超棒的爱情密码 |表白代码收藏馆~谁说程序猿不懂浪漫❤️",
+      "url": "https://ethan202511.github.io/Awesome-Love-Code/",
+      "description": "超棒的爱情密码 |表白代码收藏馆~谁说程序猿不懂浪漫❤️",
+      "icon": "frontend/assets/icons/ethan202511_github_io.ico"
+    },
+    {
+      "name": "GitHub 上当前热门仓库",
+      "url": "https://github.com/trending/",
+      "description": "GitHub 上当前热门仓库",
+      "icon": "frontend/assets/icons/github_com.png"
+    },
+    {
+      "name": "官网地址 - FlClash",
+      "url": "https://flclash.org/official/",
+      "description": "官网地址 - FlClash",
+      "icon": "frontend/assets/icons/flclash_org.png"
+    },
+    {
+      "name": "Google AI Studio - 谷歌推出的AI应用开发平台 | AI工具集",
+      "url": "https://ai-bot.cn/sites/61081.html",
+      "description": "Google AI Studio - 谷歌推出的AI应用开发平台 | AI工具集",
+      "icon": "frontend/assets/icons/ai-bot_cn.png"
+    },
+    {
+      "name": "UUIDs generator - IT Tools",
+      "url": "https://it-tools.tech/uuid-generator",
+      "description": "UUIDs generator - IT Tools",
+      "icon": "frontend/assets/icons/it-tools_tech.ico"
+    },
+    {
+      "name": "VLink- 唯一链接,分享你的全部",
+      "url": "https://vlink.cc/",
+      "description": "VLink- 唯一链接,分享你的全部",
+      "icon": "frontend/assets/icons/vlink_cc.ico"
+    }
+  ],
+  "收藏夹栏/爬虫": [
+    {
+      "name": "JS Deobfuscator",
+      "url": "https://js-deobfuscator.vercel.app/#eNpNkDFPw0AMhf+L5wyAxHIbStgIAwwMiOGac69WL3ZkX4Cq6n/vpZdWHW2/9/nZRxjAATQg4I5A9plVOH7gKL8IbuuTYQPEiRi/1E8TqnU45R24pwYCDhJQ32TwmYR7zDsJBWdZieOLqj8U8qpqfUqtzJzBPT4/NPeihBwXZO1jnqe2OGqugEaRu8p49+PaJqsZ1wG4rHNJiv84rEtKPrLe6/6V/SYVW1Xs8fAnGgzcd2Fv5hiL+2fRdkt1u3n0HBfX9QXWE9OWMFxxl8HpdAaJ4m9Q",
+      "description": "JS Deobfuscator",
+      "icon": ""
+    },
+    {
+      "name": "将 curl 命令转换为代码",
+      "url": "https://curlconverter.com/",
+      "description": "将 curl 命令转换为代码",
+      "icon": "frontend/assets/icons/curlconverter_com.ico"
+    },
+    {
+      "name": "PNG转ICO - 在线转换图标文件",
+      "url": "https://www.aconvert.com/cn/icon/png-to-ico/",
+      "description": "PNG转ICO - 在线转换图标文件",
+      "icon": "frontend/assets/icons/www_aconvert_com.png"
+    },
+    {
+      "name": "JSON在线解析格式化验证 - JSON.cn",
+      "url": "https://www.json.cn/",
+      "description": "JSON在线解析格式化验证 - JSON.cn",
+      "icon": "frontend/assets/icons/www_json_cn.ico"
+    },
+    {
+      "name": "JS加密,JS不可逆加密,JS混淆,JS混淆加密,JS压缩加密 - [JavaScript加密]",
+      "url": "https://www.jsjiami.com/",
+      "description": "JS加密,JS不可逆加密,JS混淆,JS混淆加密,JS压缩加密 - [JavaScript加密]",
+      "icon": "frontend/assets/icons/www_jsjiami_com.png"
+    },
+    {
+      "name": "JS加密-原SOJSON.V5 JS加密，不可逆JavaScript加密工具 - [JavaScript加密]",
+      "url": "https://www.jsjiami.com/sojson.v5.html",
+      "description": "JS加密-原SOJSON.V5 JS加密，不可逆JavaScript加密工具 - [JavaScript加密]",
+      "icon": "frontend/assets/icons/www_jsjiami_com.png"
+    },
+    {
+      "name": "行为验证-行为式验证码_智能区分人机验证码 -云片行为验证",
+      "url": "https://www.yunpian.com/product/captcha",
+      "description": "行为验证-行为式验证码_智能区分人机验证码 -云片行为验证",
+      "icon": "frontend/assets/icons/www_yunpian_com.png"
+    },
+    {
+      "name": "猿人学Python爬虫 - 利用Python爬虫挣钱的教程",
+      "url": "https://www.yuanrenxue.cn/",
+      "description": "猿人学Python爬虫 - 利用Python爬虫挣钱的教程",
+      "icon": "frontend/assets/icons/www_yuanrenxue_cn.ico"
+    },
+    {
+      "name": "爬虫工具库-spidertools.cn",
+      "url": "https://spidertools.cn/#/",
+      "description": "爬虫工具库-spidertools.cn",
+      "icon": "frontend/assets/icons/spidertools_cn.ico"
+    }
+  ],
+  "收藏夹栏/前端/Java": [
+    {
+      "name": "欢迎使用 Apache Maven – Maven",
+      "url": "https://maven.apache.org/",
+      "description": "欢迎使用 Apache Maven – Maven",
+      "icon": "frontend/assets/icons/maven_apache_org.png"
+    },
+    {
+      "name": "Java 11 中文版 - 在线API手册 - 码工具",
+      "url": "https://www.matools.com/api/java11",
+      "description": "Java 11 中文版 - 在线API手册 - 码工具",
+      "icon": "frontend/assets/icons/www_matools_com.png"
+    },
+    {
+      "name": "Maven 存储库：搜索/浏览/探索",
+      "url": "https://mvnrepository.com/",
+      "description": "Maven 存储库：搜索/浏览/探索",
+      "icon": "frontend/assets/icons/mvnrepository_com.ico"
+    },
+    {
+      "name": "Tomcat-轻量级web服务器",
+      "url": "https://tomcat.apache.org/",
+      "description": "Tomcat-轻量级web服务器",
+      "icon": "frontend/assets/icons/tomcat_apache_org.png"
+    },
+    {
+      "name": "HTTP (状态码）中文开发手册 - 开发者手册 - 腾讯云开发者社区-腾讯云",
+      "url": "https://cloud.tencent.com/developer/section/1190157",
+      "description": "HTTP (状态码）中文开发手册 - 开发者手册 - 腾讯云开发者社区-腾讯云",
+      "icon": "frontend/assets/icons/cloud_tencent_com.png"
+    },
+    {
+      "name": "Spring | Home",
+      "url": "https://spring.io/",
+      "description": "Spring | Home",
+      "icon": "frontend/assets/icons/spring_io.png"
+    },
+    {
+      "name": "Apifox - API 文档、调试、Mock、测试一体化协作平台。拥有接口文档管理、接口调试、Mock、自动化测试等功能，接口开发、测试、联调效率，提升 10 倍。最好用的接口文档管理工具，接口自动化测试工具。",
+      "url": "https://apifox.com/",
+      "description": "Apifox - API 文档、调试、Mock、测试一体化协作平台。拥有接口文档管理、接口调试、Mock、自动化测试等功能，接口开发、测试、联调效率，提升 10 倍。最好用的接口文档管理工具，接口自动化测试工具。",
+      "icon": "frontend/assets/icons/apifox_com.png"
+    },
+    {
+      "name": "配置_MyBatis中文网",
+      "url": "https://mybatis.net.cn/configuration.html",
+      "description": "配置_MyBatis中文网",
+      "icon": "frontend/assets/icons/mybatis_net_cn.png"
+    },
+    {
+      "name": "JSON Web 令牌 - jwt.io",
+      "url": "https://www.jwt.io/",
+      "description": "JSON Web 令牌 - jwt.io",
+      "icon": "frontend/assets/icons/www_jwt_io.ico"
+    },
+    {
+      "name": "MD5在线加密/解密/破解—MD5在线",
+      "url": "https://www.sojson.com/encrypt_md5.html",
+      "description": "MD5在线加密/解密/破解—MD5在线",
+      "icon": "frontend/assets/icons/www_sojson_com.png"
+    },
+    {
+      "name": "YApi Pro-高效、易用、功能强大的可视化接口管理平台",
+      "url": "https://yapi.pro/group/588440",
+      "description": "YApi Pro-高效、易用、功能强大的可视化接口管理平台",
+      "icon": "frontend/assets/icons/yapi_pro.png"
+    },
+    {
+      "name": "YApi-高效、易用、功能强大的可视化接口管理平台",
+      "url": "http://yapi.feisudu.com/group/20025",
+      "description": "YApi-高效、易用、功能强大的可视化接口管理平台",
+      "icon": "frontend/assets/icons/yapi_feisudu_com.png"
+    },
+    {
+      "name": "Apache ECharts",
+      "url": "https://echarts.apache.org/zh/index.html",
+      "description": "Apache ECharts",
+      "icon": "frontend/assets/icons/echarts_apache_org.png"
+    },
+    {
+      "name": "MyBatis-Plus 🚀 为简化开发而生",
+      "url": "https://baomidou.com/",
+      "description": "MyBatis-Plus 🚀 为简化开发而生",
+      "icon": "frontend/assets/icons/baomidou_com.svg"
+    },
+    {
+      "name": "Dockerfile reference | Docker Docs",
+      "url": "https://docs.docker.com/reference/dockerfile",
+      "description": "Dockerfile reference | Docker Docs",
+      "icon": "frontend/assets/icons/docs_docker_com.png"
+    },
+    {
+      "name": "Nacos官网| Nacos 配置中心 | Nacos 下载| Nacos 官方社区 | Nacos 官网",
+      "url": "https://nacos.io/",
+      "description": "Nacos官网| Nacos 配置中心 | Nacos 下载| Nacos 官方社区 | Nacos 官网",
+      "icon": "frontend/assets/icons/nacos_io.ico"
+    },
+    {
+      "name": "OpenFeign/feign: Feign makes writing java http clients easier",
+      "url": "https://github.com/OpenFeign/feign",
+      "description": "OpenFeign/feign: Feign makes writing java http clients easier",
+      "icon": "frontend/assets/icons/github_com.png"
+    },
+    {
+      "name": "nginx",
+      "url": "https://nginx.org/en/",
+      "description": "nginx",
+      "icon": "frontend/assets/icons/nginx_org.png"
+    },
+    {
+      "name": "home | Sentinel",
+      "url": "https://sentinelguard.io/zh-cn/index.html",
+      "description": "home | Sentinel",
+      "icon": "frontend/assets/icons/sentinelguard_io.ico"
+    },
+    {
+      "name": "墨刀 - 适合产品团队的原型设计及协作平台",
+      "url": "https://modao.cc/",
+      "description": "墨刀 - 适合产品团队的原型设计及协作平台",
+      "icon": "frontend/assets/icons/modao_cc.ico"
+    }
+  ],
+  "收藏夹栏/前端": [
+    {
+      "name": "EMQX Cloud 控制台",
+      "url": "https://cloud.emqx.com/console/deployments",
+      "description": "EMQX Cloud 控制台",
+      "icon": "frontend/assets/icons/cloud_emqx_com.ico"
+    },
+    {
+      "name": "网页设计常用色彩搭配表 - 配色表 | 小影的工具箱",
+      "url": "http://tool.c7sky.com/webcolor/",
+      "description": "网页设计常用色彩搭配表 - 配色表 | 小影的工具箱",
+      "icon": ""
+    },
+    {
+      "name": "AI Sora 视频创作",
+      "url": "https://asspcz.wyyqh.cn/h5/sora/i.html?self_os=1&ad_id=0&platform_id=4&app_id=1121&agency_id=71&channel_id=18868&bd_vid=17277824021676544205",
+      "description": "AI Sora 视频创作",
+      "icon": ""
+    },
+    {
+      "name": "npmmirror 镜像站",
+      "url": "https://npmmirror.com/",
+      "description": "npmmirror 镜像站",
+      "icon": "frontend/assets/icons/npmmirror_com.ico"
+    },
+    {
+      "name": "模板语法 | Vue.js",
+      "url": "https://cn.vuejs.org/guide/essentials/template-syntax.html",
+      "description": "模板语法 | Vue.js",
+      "icon": "frontend/assets/icons/cn_vuejs_org.svg"
+    },
+    {
+      "name": "Swiper Vue.js组件",
+      "url": "https://swiperjs.com/vue",
+      "description": "Swiper Vue.js组件",
+      "icon": "frontend/assets/icons/swiperjs_com.png"
+    },
+    {
+      "name": "使用说明 · Axios 中文说明 · 看云",
+      "url": "https://www.kancloud.cn/yunye/axios/234845",
+      "description": "使用说明 · Axios 中文说明 · 看云",
+      "icon": "frontend/assets/icons/www_kancloud_cn.png"
+    },
+    {
+      "name": "Overview 组件总览 | Element Plus",
+      "url": "https://element-plus.org/zh-CN/component/overview.html",
+      "description": "Overview 组件总览 | Element Plus",
+      "icon": "frontend/assets/icons/element-plus_org.svg"
+    },
+    {
+      "name": "VUE后台管理系统模板",
+      "url": "http://vue.easydo.work/",
+      "description": "VUE后台管理系统模板",
+      "icon": "frontend/assets/icons/vue_easydo_work.svg"
+    },
+    {
+      "name": "W3C 标记验证服务",
+      "url": "https://validator.w3.org/",
+      "description": "W3C 标记验证服务",
+      "icon": "frontend/assets/icons/validator_w3_org.png"
+    },
+    {
+      "name": "W3Schools 在线 Web 教程",
+      "url": "https://www.w3schools.com/",
+      "description": "W3Schools 在线 Web 教程",
+      "icon": "frontend/assets/icons/www_w3schools_com.ico"
+    },
+    {
+      "name": "简介 | Pinia",
+      "url": "https://pinia.vuejs.org/zh/introduction.html",
+      "description": "简介 | Pinia",
+      "icon": "frontend/assets/icons/pinia_vuejs_org.svg"
+    },
+    {
+      "name": "Web 标准 |W3C 系列",
+      "url": "https://www.w3.org/standards/",
+      "description": "Web 标准 |W3C 系列",
+      "icon": "frontend/assets/icons/www_w3_org.png"
+    },
+    {
+      "name": "全部 |Navnav 导航",
+      "url": "https://thuvien.org/navnav/",
+      "description": "全部 |Navnav 导航",
+      "icon": ""
+    },
+    {
+      "name": "Uiverse |最大的开源 UI 元素库",
+      "url": "https://uiverse.io/",
+      "description": "Uiverse |最大的开源 UI 元素库",
+      "icon": "frontend/assets/icons/uiverse_io.png"
+    },
+    {
+      "name": "React Bits - React 的动画 UI 组件",
+      "url": "https://www.reactbits.dev/",
+      "description": "React Bits - React 的动画 UI 组件",
+      "icon": "frontend/assets/icons/www_reactbits_dev.ico"
+    },
+    {
+      "name": "loading.io - 您的 SVG + GIF + PNG Ajax 加载图标和动画生成器",
+      "url": "https://loading.io/",
+      "description": "loading.io - 您的 SVG + GIF + PNG Ajax 加载图标和动画生成器",
+      "icon": "frontend/assets/icons/loading_io.png"
+    },
+    {
+      "name": "MDN Web 文档",
+      "url": "https://developer.mozilla.org/zh-CN/",
+      "description": "MDN Web 文档",
+      "icon": "frontend/assets/icons/developer_mozilla_org.ico"
+    },
+    {
+      "name": "Swiper中文网-轮播图幻灯片js插件,H5页面前端开发",
+      "url": "https://swiper.com.cn/",
+      "description": "Swiper中文网-轮播图幻灯片js插件,H5页面前端开发",
+      "icon": "frontend/assets/icons/swiper_com_cn.png"
+    },
+    {
+      "name": "ICP代备案管理系统",
+      "url": "https://beian.aliyun.com/pcContainer/siteInfo?baOrderId=2036581891912&orderType=1",
+      "description": "ICP代备案管理系统",
+      "icon": "frontend/assets/icons/beian_aliyun_com.ico"
+    },
+    {
+      "name": "Bootstrap中文网",
+      "url": "https://www.bootcss.com/",
+      "description": "Bootstrap中文网",
+      "icon": "frontend/assets/icons/www_bootcss_com.ico"
+    },
+    {
+      "name": "jQuery 查询",
+      "url": "https://jquery.com/",
+      "description": "jQuery 查询",
+      "icon": "frontend/assets/icons/jquery_com.ico"
+    },
+    {
+      "name": "jquery 在线手册 | jQuery API 中文手册 | jQuery 速查表 | jQuery 参考手册 | jQuery CHM | jQuery 在线文档 | jQuery 1.12.1",
+      "url": "https://hemin.cn/jq/",
+      "description": "jquery 在线手册 | jQuery API 中文手册 | jQuery 速查表 | jQuery 参考手册 | jQuery CHM | jQuery 在线文档 | jQuery 1.12.1",
+      "icon": ""
+    },
+    {
+      "name": "产品详情 | 私域云",
+      "url": "https://www.siyuyun.cn/servicedetail?id=137",
+      "description": "产品详情 | 私域云",
+      "icon": "frontend/assets/icons/www_siyuyun_cn.ico"
+    },
+    {
+      "name": "个人",
+      "url": "https://www.thebai.xyz/",
+      "description": "个人",
+      "icon": ""
+    },
+    {
+      "name": "登录会员中心 - 浪浪云：全新升级，提供高性能、可靠稳定的云服务器解决方案",
+      "url": "https://langlangy.cn/login",
+      "description": "登录会员中心 - 浪浪云：全新升级，提供高性能、可靠稳定的云服务器解决方案",
+      "icon": "frontend/assets/icons/langlangy_cn.ico"
+    },
+    {
+      "name": "iSlide- 让PPT设计简单起来~ | 中文官网",
+      "url": "https://www.islide.cc/",
+      "description": "iSlide- 让PPT设计简单起来~ | 中文官网",
+      "icon": "frontend/assets/icons/www_islide_cc.ico"
+    },
+    {
+      "name": "一个 Vue 3 UI 框架 | Element Plus",
+      "url": "https://element-plus.org/zh-CN/",
+      "description": "一个 Vue 3 UI 框架 | Element Plus",
+      "icon": "frontend/assets/icons/element-plus_org.svg"
+    },
+    {
+      "name": "程序员宝盒 - 开发者常用导航大全 - 一站式效率提升平台",
+      "url": "https://www.baoboxs.com/",
+      "description": "程序员宝盒 - 开发者常用导航大全 - 一站式效率提升平台",
+      "icon": "frontend/assets/icons/www_baoboxs_com.ico"
+    },
+    {
+      "name": "UI UX Pro Max - Claude Code 的设计智能",
+      "url": "https://ui-ux-pro-max-skill.nextlevelbuilder.io/",
+      "description": "UI UX Pro Max - Claude Code 的设计智能",
+      "icon": "frontend/assets/icons/ui-ux-pro-max-skill_nextlevelbuilder_io.svg"
+    }
+  ],
+  "收藏夹栏": [
+    {
+      "name": "DeepSeek | 深度求索",
+      "url": "https://www.deepseek.com/",
+      "description": "DeepSeek | 深度求索",
+      "icon": "frontend/assets/icons/www_deepseek_com.ico"
+    },
+    {
+      "name": "豆包 - 字节跳动旗下 AI 智能助手",
+      "url": "https://www.doubao.com/chat/",
+      "description": "豆包 - 字节跳动旗下 AI 智能助手",
+      "icon": "frontend/assets/icons/www_doubao_com.png"
+    },
+    {
+      "name": "综合导航 - 终极网址库",
+      "url": "https://www.zjnav.cc/daohang",
+      "description": "综合导航 - 终极网址库",
+      "icon": "frontend/assets/icons/www_zjnav_cc.png"
+    },
+    {
+      "name": "文心一言",
+      "url": "https://yiyan.baidu.com/",
+      "description": "文心一言",
+      "icon": "frontend/assets/icons/yiyan_baidu_com.ico"
+    },
+    {
+      "name": "苍穹",
+      "url": "file:///H:/KaiFaProfile/04%E9%98%B6%E6%AE%B5%EF%BC%9A%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96/%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3-%E7%A6%BB%E7%BA%BF%E7%89%88/%E8%8B%8D%E7%A9%B9%E5%A4%96%E5%8D%96-%E7%AE%A1%E7%90%86%E7%AB%AF%E6%8E%A5%E5%8F%A3.html",
+      "description": "苍穹",
+      "icon": ""
+    },
+    {
+      "name": "即时工具-致力打造即用即走型在线工具箱",
+      "url": "https://www.67tool.com/",
+      "description": "即时工具-致力打造即用即走型在线工具箱",
+      "icon": "frontend/assets/icons/www_67tool_com.ico"
+    },
+    {
+      "name": "腾讯元宝 - 发现",
+      "url": "https://yuanbao.tencent.com/discovery",
+      "description": "腾讯元宝 - 发现",
+      "icon": "frontend/assets/icons/yuanbao_tencent_com.png"
+    },
+    {
+      "name": "零度解说 – 零度博客",
+      "url": "https://freedidi.com/",
+      "description": "零度解说 – 零度博客",
+      "icon": "frontend/assets/icons/freedidi_com.png"
+    },
+    {
+      "name": "AI工具集",
+      "url": "https://ai-bot.cn/",
+      "description": "AI工具集",
+      "icon": "frontend/assets/icons/ai-bot_cn.png"
+    },
+    {
+      "name": "(1条消息) CSDN博客-专业IT技术发表平台",
+      "url": "https://blog.csdn.net/",
+      "description": "(1条消息) CSDN博客-专业IT技术发表平台",
+      "icon": "frontend/assets/icons/blog_csdn_net.png"
+    },
+    {
+      "name": "百度一下，你就知道",
+      "url": "https://www.baidu.com/",
+      "description": "百度一下，你就知道",
+      "icon": "frontend/assets/icons/www_baidu_com.ico"
+    },
+    {
+      "name": "腾讯视频-中国领先的在线视频媒体平台,海量高清视频在线观看",
+      "url": "https://v.qq.com/",
+      "description": "腾讯视频-中国领先的在线视频媒体平台,海量高清视频在线观看",
+      "icon": "frontend/assets/icons/v_qq_com.png"
+    },
+    {
+      "name": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+      "url": "https://www.bilibili.com/",
+      "description": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+      "icon": "frontend/assets/icons/www_bilibili_com.png"
+    },
+    {
+      "name": "N",
+      "url": "https://alba-felix.github.io/Notee/",
+      "description": "N",
+      "icon": ""
+    },
+    {
+      "name": "天刀游戏",
+      "url": "https://gamer.qq.com/v2/cloudgame/game/95072/54amiz2bsivnhtyt",
+      "description": "天刀游戏",
+      "icon": "frontend/assets/icons/gamer_qq_com.png"
+    },
+    {
+      "name": "FLiNG Trainer - 电脑游戏修改器和模组",
+      "url": "https://flingtrainer.com/",
+      "description": "FLiNG Trainer - 电脑游戏修改器和模组",
+      "icon": "frontend/assets/icons/flingtrainer_com.png"
+    },
+    {
+      "name": "网易云音乐",
+      "url": "https://music.163.com/#/search/m/?s=%E9%99%88%E5%A5%95%E8%BF%85&type=1",
+      "description": "网易云音乐",
+      "icon": "frontend/assets/icons/music_163_com.ico"
+    },
+    {
+      "name": "实习僧_大学生实习、校招求职招聘网站_实习_校园招聘丨萌想科技",
+      "url": "https://www.shixiseng.com/",
+      "description": "实习僧_大学生实习、校招求职招聘网站_实习_校园招聘丨萌想科技",
+      "icon": "frontend/assets/icons/www_shixiseng_com.ico"
+    },
+    {
+      "name": "有道翻译_文本、文档、网页、在线即时翻译",
+      "url": "https://fanyi.youdao.com/?msclkid=d23ed72f825a14787186b1f683860869#/AITranslate?keyfrom=aibingvip",
+      "description": "有道翻译_文本、文档、网页、在线即时翻译",
+      "icon": "frontend/assets/icons/fanyi_youdao_com.png"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "description": "ChatGPT",
+      "icon": "frontend/assets/icons/chatgpt_com.png"
+    },
+    {
+      "name": "首页 - 文泉学堂",
+      "url": "https://lib-tsinghua.wqxuetang.com/#/",
+      "description": "首页 - 文泉学堂",
+      "icon": "frontend/assets/icons/lib-tsinghua_wqxuetang_com.ico"
+    },
+    {
+      "name": "爱校对官网-错别字检查_文字校对_文本纠错_校对软件",
+      "url": "https://www.ijiaodui.com/workbench?bd_vid=12895108844428795261",
+      "description": "爱校对官网-错别字检查_文字校对_文本纠错_校对软件",
+      "icon": "frontend/assets/icons/www_ijiaodui_com.png"
+    },
+    {
+      "name": "崩坏：星穹铁道社区-米游社",
+      "url": "https://www.miyoushe.com/sr",
+      "description": "崩坏：星穹铁道社区-米游社",
+      "icon": "frontend/assets/icons/www_miyoushe_com.ico"
+    },
+    {
+      "name": "华文慕课",
+      "url": "https://www.chinesemooc.org/index.php",
+      "description": "华文慕课",
+      "icon": "frontend/assets/icons/www_chinesemooc_org.png"
+    },
+    {
+      "name": "通过 Torrent 免费下载 PC 上的游戏 [最新版本 2024]",
+      "url": "https://byruthub.org/",
+      "description": "通过 Torrent 免费下载 PC 上的游戏 [最新版本 2024]",
+      "icon": "frontend/assets/icons/byruthub_org.png"
+    },
+    {
+      "name": "STEAMUNLOCKED » 预装 PC 的免费 Steam 游戏",
+      "url": "https://steamunlocked.net/",
+      "description": "STEAMUNLOCKED » 预装 PC 的免费 Steam 游戏",
+      "icon": "frontend/assets/icons/steamunlocked_net.png"
+    },
+    {
+      "name": "Welcome to PyAutoGUI’s documentation! — PyAutoGUI documentation",
+      "url": "https://pyautogui.readthedocs.io/en/latest/",
+      "description": "Welcome to PyAutoGUI’s documentation! — PyAutoGUI documentation",
+      "icon": "frontend/assets/icons/pyautogui_readthedocs_io.png"
+    },
+    {
+      "name": "pywin32 · PyPI",
+      "url": "https://pypi.org/project/pywin32/",
+      "description": "pywin32 · PyPI",
+      "icon": "frontend/assets/icons/pypi_org.ico"
+    },
+    {
+      "name": "ChatExcel AI Excel处理和数据分析",
+      "url": "https://chatexcel.com/#/",
+      "description": "ChatExcel AI Excel处理和数据分析",
+      "icon": "frontend/assets/icons/chatexcel_com.svg"
+    },
+    {
+      "name": "默沙东诊疗手册",
+      "url": "https://www.msdmanuals.cn/",
+      "description": "默沙东诊疗手册",
+      "icon": "frontend/assets/icons/www_msdmanuals_cn.ico"
+    }
+  ],
+  "其他收藏夹/已搁置标签页/游戏": [
+    {
+      "name": "无法访问此页面",
+      "url": "ms-appx-web://microsoft.microsoftedge/assets/errorpages/dnserror.html?DNSError=0&ErrorStatus=0x800C0005&NetworkStatusSupported=1#https://onedrive.live.com/redir?resid=74381BF6F596BEC5!278&ithint=file%2cpptx&action=editnew&wdTpl=TM16401379&wdNewAndOpenCt=1564666352041&wdPreviousSession=909ec2b1-20d1-4269-9900-aba8c6495f99&wdOrigin=ohpAppStartPages",
+      "description": "无法访问此页面",
+      "icon": ""
+    },
+    {
+      "name": "将文字翻译为不同语言 - Office 支持",
+      "url": "https://support.office.com/zh-cn/article/%E5%B0%86%E6%96%87%E5%AD%97%E7%BF%BB%E8%AF%91%E4%B8%BA%E4%B8%8D%E5%90%8C%E8%AF%AD%E8%A8%80-287380e4-a56c-48a1-9977-f2dca89ce93f?wt.mc_id=OC_Translator&ui=zh-CN&rs=zh-CN&ad=CN",
+      "description": "将文字翻译为不同语言 - Office 支持",
+      "icon": "frontend/assets/icons/support_office_com.png"
+    },
+    {
+      "name": "在PC torrent上下载罗马奴隶（最新版本）",
+      "url": "https://byrutgame.org/29520-slaves-of-rome.html",
+      "description": "在PC torrent上下载罗马奴隶（最新版本）",
+      "icon": "frontend/assets/icons/byrutgame_org.png"
+    }
+  ],
+  "其他收藏夹/已搁置标签页/组 3": [
+    {
+      "name": "小米帮助中心-小米商城",
+      "url": "https://www.mi.com/service/bijiben/",
+      "description": "小米帮助中心-小米商城",
+      "icon": "frontend/assets/icons/www_mi_com.ico"
+    }
+  ],
+  "其他收藏夹": [
+    {
+      "name": "毒霸网址大全",
+      "url": "http://www.duba.com/?f=favorites11",
+      "description": "毒霸网址大全",
+      "icon": "frontend/assets/icons/www_duba_com.png"
+    }
+  ],
+  "其他收藏夹/VAM": [
+    {
+      "name": "wireshark抓包教程详解-CSDN博客",
+      "url": "https://blog.csdn.net/lixinkuan328/article/details/122985439?ops_request_misc=%257B%2522request%255Fid%2522%253A%252266FC5465-2229-4F4D-B5A6-DAAA06D41E7A%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=66FC5465-2229-4F4D-B5A6-DAAA06D41E7A&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-122985439-null-null.142^v100^pc_search_result_base5&utm_term=wireshark%E6%8A%93%E5%8C%85%E5%8F%8A%E5%88%86%E6%9E%90&spm=1018.2226.3001.4187",
+      "description": "wireshark抓包教程详解-CSDN博客",
+      "icon": "frontend/assets/icons/blog_csdn_net.png"
+    }
+  ]
+}
